@@ -54,6 +54,7 @@ module.exports = {
       titel01: "'scotch-display', sans-serif",
       titel02: "'scotch-display', sans-serif",
       titel03: "'tablet-gothic', sans-serif",
+      bodyMedium: "'tablet-gothic', sans-serif",
       bodySmall: "'tablet-gothic', sans-serif",
       bodyBase: "'tablet-gothic', sans-serif",
       bodyBaseItalic: "'tablet-gothic', sans-serif",
@@ -79,6 +80,20 @@ module.exports = {
         size01Mobile: "2.986rem",
         size02Mobile: "2.074rem",
         size03Mobile: "1.44rem",
+      },
+      //Padding web
+      padding: {
+        webXsmall: "10px",
+        webSmall: "30px",
+        webMedium: "140px",
+        webLarge: "220px",
+      },
+      //Margin web
+      margin: {
+        webXsmall: "10px",
+        webSmall: "30px",
+        webMedium: "140px",
+        webLarge: "220px",
       },
     },
   },

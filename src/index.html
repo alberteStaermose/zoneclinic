@@ -11,32 +11,121 @@
 
     <title>ZoneClinic</title>
   </head>
-  <body class="bg-olive100">
-    <header class="bg-olive400">
+  <body class="relative bg-olive100">
+    <header class="relative z-50">
       <div id="navigation" class="flex justify-between p-6">
         <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" />
-        <nav class="self-start font-menuLinks text-sizeBody font-normal text-black200">
+        <nav
+          class="self-start font-menuLinks text-sizeBody font-normal text-black200"
+        >
           <ul class="flex flex-row gap-6">
             <li><a href="#0">Om ZoneClinic</a></li>
             <li><a href="#0">Behandlinger</a></li>
             <li><a href="#0">Priser</a></li>
             <li><a href="#0">Kontakt</a></li>
-            <li class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900"><a href="#0">Book Nu</a></li>
+            <li
+              class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900"
+            >
+              <a href="#0">Book Nu</a>
+            </li>
           </ul>
         </nav>
       </div>
-      <section id="hero_section" class="grid grid-flow-col grid-rows-1 gap-4">
+    </header>
+    <main class="absolute top-0 z-0">
+      <section
+        id="hero_section"
+        class="grid grid-cols-2 grid-rows-1 gap-4 bg-olive400"
+      >
         <div class="">
-          <img class="w-2/4" src="./img/hero_img.png" alt="Hero image of a pair of feet" />
+          <img
+            class="w-fit"
+            src="./img/hero_img.png"
+            alt="Hero image of a pair of feet"
+          />
         </div>
-        <div class="w-2/4">
-          <h1 class="text-500 font-titel01 text-size01Web font-medium text-black200">Velkommen til ZoneClinic</h1>
-          <p class="font-bodyBase text-sizeBody font-light text-black400">Velkommen til min klinik i Birkerød. Som professionel behandler tilbyder jeg skræddersyede behandlinger, der er nøje tilpasset dine individuelle behov.</p>
-          <button class="bg-yellow500 font-knapTekster text-sizeBody font-normal text-lake500">Book tid</button>
+        <div class="mt-60 ml-10 mr-20">
+          <h1
+            class="text-500 font-titel01 text-size01Web font-medium text-black200"
+          >
+            Velkommen til ZoneClinic
+          </h1>
+          <p class="font-bodyBase text-sizeBody font-light text-black400">
+            Velkommen til min klinik i Birkerød. Som professionel behandler
+            tilbyder jeg skræddersyede behandlinger, der er nøje tilpasset dine
+            individuelle behov.
+          </p>
+          <button
+            class="bg-yellow500 font-knapTekster text-sizeBody font-normal text-lake500"
+          >
+            Book tid
+          </button>
         </div>
       </section>
-    </header>
-    <main></main>
+      <section class="bg-yellow300 px-60 pt-webMedium pb-webMedium">
+        <h2 class="pb-webSmall font-titel02">Jeg tilbyder</h2>
+        <div class="grid grid-cols-3 gap-20 text-center">
+          <div class="">
+            <h3 class="pb-webXsmall font-titel03">Zoneterapi</h3>
+            <img
+              class="mb-webSmall"
+              src="./img/zoneterapi.png"
+              alt="Illustartion af behandlingen zoneterapi"
+            />
+            <button
+              class="bg-yellow500 font-knapTekster text-sizeBody font-normal text-lake500"
+            >
+              Læs mere
+            </button>
+          </div>
+          <div>
+            <h3 class="pb-webXsmall font-titel03">Japansk Lifting</h3>
+            <img
+              class="mb-webSmall"
+              src="./img/japanskLifting.png"
+              alt="Illustartion af behandlingen Japansk lifting"
+            />
+            <button
+              class="bg-yellow500 font-knapTekster text-sizeBody font-normal text-lake500"
+            >
+              Læs mere
+            </button>
+          </div>
+          <div>
+            <h3 class="pb-webXsmall font-titel03">Fysiurgisk Massage</h3>
+            <img
+              class="mb-webSmall"
+              src="./img/masage.png"
+              alt="Illustartion af behandlingen massage"
+            />
+            <button
+              class="bg-yellow500 font-knapTekster text-sizeBody font-normal text-lake500"
+            >
+              Læs mere
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="px-60 pt-webMedium pb-webMedium">
+        <h2 class="pb-webSmall">Hvem er Jeg</h2>
+        <div class="grid grid-cols-2">
+          <img src="./img/japanskLifting.png" alt="Billede af Merete" />
+          <div class="">
+            <div class="bg-olive400">
+              <h3>Mit navn er Merete...</h3>
+              <p>
+                Jeg blev færdiguddannet zoneterapeut i 2021, og har siden da
+                tilbudt behandlinger indenfor dette. Jeg har udvidet mine
+                kompetencer og tilbyder nu også behandlinger indenfor japansk
+                lifting og massage. <br />
+                <br />
+                Læs mere om mig og hvorfor jeg er zoneterapeut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
     <script type="module" src="./main.js"></script>
