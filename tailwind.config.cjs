@@ -85,15 +85,17 @@ module.exports = {
       padding: {
         webXsmall: "10px",
         webSmall: "30px",
-        webMedium: "140px",
-        webLarge: "220px",
+        webMedium: "60px",
+        webLarge: "140px",
+        webXlarge: "220px",
       },
       //Margin web
       margin: {
         webXsmall: "10px",
         webSmall: "30px",
-        webMedium: "140px",
-        webLarge: "220px",
+        webMedium: "60px",
+        webLarge: "140px",
+        webXlarge: "220px",
       },
     },
   },
