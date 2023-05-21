@@ -17,11 +17,21 @@
         <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
         <nav class="self-start font-menuLinks text-sizeBody font-normal text-black200">
           <ul class="flex flex-row gap-6">
-            <li><a href="om.html">Om ZoneClinic</a></li>
-            <li><a href="#0">Behandlinger</a></li>
-            <li><a href="priser.html">Priser</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900">
+            <li class="border-olive900 hover:border-b"><a href="om.html">Om ZoneClinic</a></li>
+            <div>
+              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
+
+              <!-- Hover dropdown menu -->
+              <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+              </div>
+            </div>
+            <li class="border-olive900 hover:border-b"><a href="priser.html">Priser</a></li>
+            <li class="border-olive900 hover:border-b"><a href="kontakt.html">Kontakt</a></li>
+            <li class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900 hover:border-black300 hover:text-black600">
               <a href="#0">Book Nu</a>
             </li>
           </ul>
@@ -65,7 +75,7 @@
           <div class="relative grid grid-cols-2 place-items-center">
             <img class="" src="./img/placeholderBillede.jpg" alt="Billede af Merete" />
             <div class="">
-              <div class="absolute left-96 bg-olive400 p-webMedium">
+              <div class="absolute left-96 rounded bg-olive400 p-webMedium">
                 <h3>Mit navn er Merete...</h3>
                 <p>
                   Jeg blev færdiguddannet zoneterapeut i 2021, og har siden da tilbudt behandlinger indenfor dette. Jeg har udvidet mine kompetencer og tilbyder nu også behandlinger indenfor japansk lifting og massage. <br />
