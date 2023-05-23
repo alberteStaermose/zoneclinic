@@ -42,7 +42,7 @@ h3 {
   font-weight: 300;
   font-style: normal;
   font-size: 1rem;
-  width: 60ch;
+  max-width: 60ch;
 }
 
 #bodyBaseItalic {
