@@ -11,10 +11,169 @@
 
     <title>Kontakt</title>
   </head>
+  <body class="relative bg-olive100">
+    <header class="relative z-50">
+      <div id="navigation" class="flex justify-between p-6">
+        <a href="index.html">
+          <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24"
+        /></a>
+        <nav
+          class="self-start "
+        >
+          <ul class="flex flex-row gap-6">
+            <li class="border-olive900 hover:border-b">
+              <a href="om.html">Om ZoneClinic</a>
+            </li>
+            <div>
+              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
 
-  <body>
-    <header></header>
-    <main></main>
+              <!-- Hover dropdown menu -->
+              <div
+                class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex"
+              >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="zoneterapi.html"
+                  >Zoneterapi</a
+                >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="japansklifting.html"
+                  >Japansk Lifting</a
+                >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="fysiurgiskmassage.html"
+                  >Fysiurgisk Massage</a
+                >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="kombi.html"
+                  >Kombi Behandling</a
+                >
+              </div>
+            </div>
+            <li class="border-olive900 hover:border-b">
+              <a href="priser.html">Priser</a>
+            </li>
+            <li class="border-olive900 hover:border-b">
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li
+              class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900 hover:border-black300 hover:text-black600"
+            >
+              <a href="#0">Book Nu</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="absolute top-0 z-0">
+      <section id="lille_hero_section" class="relative overflow-hidden">
+        <img class="h-full w-full object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
+
+        <div class="text-white absolute bottom-[59px] flex w-full flex-col items-center text-center">
+          <h1>Kontakt</h1>
+          <p id="bodyBase">Har du spørgsmål så kan du kontakte mig her</p>
+          <button id="tertiaryButton" class="mt-webSmall">Book tid</button>
+        </div>
+      </section>
+      <!-- indhld på side - section 1 -->
+      <section class="bg-olive500 lg:pb-webLarge">
+        <div class="lg:pt-webLarge lg:mx-72 lg:pb-webMedium">
+          <h2>Kom i kontakt med mig</h2>
+          <p id="bodyBase">Jeg vil gerne høre fra dig! Har du spørgsmål, kommentarer eller ønsker du at booke en aftale, er du velkommen til at kontakte mig via nedenstående kontaktinformation. Jeg står klar til at hjælpe dig og besvare dine henvendelser så hurtigt som muligt. Du kan kontakte mig enten via telefon, 
+            e-mail eller ved at udfylde kontaktformularen nedenfor.</p>
+        </div>
+        <div></div>
+        <div class="bg-olive200 w-96 h-96 mx-auto">
+          <p>form</p>
+        </div>
+      </section>
+<!-- indhld på side - section 2 -->
+      <section>
+        <div class="">
+          <h2>Information</h2>
+        </div>
+
+        <div id="price_box" class="grid grid-cols-3 place-content-around gap-6 px-webXlarge py-webLarge">
+          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+            <img class="h-auto w-[70px] pt-webSmall" src="./img/feet_icon.svg" alt="Icon of a pair of feet" />
+            <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+            <div class="flex flex-row gap-4 pt-webXsmall">
+              <p id="bodyBase">50 minutter</p>
+              <p id="bodySmall">500,-</p>
+            </div>
+          </div>
+
+          <div id="price_box" class="grid grid-cols-3 place-content-around gap-6 px-webXlarge py-webLarge">
+            <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+              <img class="h-auto w-[70px] pt-webSmall" src="./img/feet_icon.svg" alt="Icon of a pair of feet" />
+              <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+              <div class="flex flex-row gap-4 pt-webXsmall">
+                <p id="bodyBase">50 minutter</p>
+                <p id="bodySmall">500,-</p>
+              </div>
+            </div>
+
+            <div id="price_box" class="grid grid-cols-3 place-content-around gap-6 px-webXlarge py-webLarge">
+              <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+                <img class="h-auto w-[70px] pt-webSmall" src="./img/feet_icon.svg" alt="Icon of a pair of feet" />
+                <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+                <div class="flex flex-row gap-4 pt-webXsmall">
+                  <p id="bodyBase">50 minutter</p>
+                  <p id="bodySmall">500,-</p>
+                </div>
+              </div>
+      </section>
+      
+      <!-- footer -->
+      <footer class="bg-olive100 lg:mt-webLarge mt-webMedium lg:pt-webLarge pb-webSmall lg:pb-webSmall ">
+        <section class="lg:-mt-webLarge border-t-[3px] border-olive500 lg:pb-webMedium pb-webMedium md:pt-webMedium lg:pt-0 sm:pt-webSmall pt-webSmall">
+          <div class="grid lg:grid-cols-4 md:grid-cols-4 lg:pt-webMedium lg:mx-60 mx-webSmall gap-4">
+            <div>
+              <img class="h-32" src="img/logo.svg" alt="logo">
+            </div>
+            <div>
+            <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
+            <p id="bodyBase">ZoneClinic <br>
+              Skovvang 25, <br>
+              3460 Birkerød <br>
+              <br>
+              Tlf: +45 50300744 <br>
+              Email: zoneclinic@gmail.com</p>
+            </div>
+            <div>
+              <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
+              <p id="bodyBase">Mandag: 9-14 <br>
+                Tirsdag: 9-14 <br>
+                Onsdag: 9-14 <br>
+                Torsdag: 9-14 <br>
+                Fredag: 9-14 <br>
+                Lør-Søn: Lukket</p>
+            </div>
+            <div>
+              <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+              <div class="flex flex-row gap-2">
+              <a href="https://www.instagram.com/zoneclinic/" target="_blank"> <img src="img/instagram.png" alt="link til instagram"> </a>
+              <a href="#" target="_blank"> <img src="img/facebook.png" alt="link til facebook"> </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lg:pt-webXsmall pt-webSmall border-t-[2px] border-olive500 lg:mx-60">
+          <div class="grid grid-cols-3">
+            <div></div>
+            <div>
+              <p id="bodyXsmall">CVR: ?</p>
+            </div>
+            <div id="bodyXsmall">
+              Persondatapolitik | Cookiepolitik
+            </div>
+          </div>
+        </section>
+      </footer>
+      </main>
     <footer></footer>
     <script type="module" src="./main.js"></script>
   </body>
