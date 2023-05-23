@@ -75,17 +75,29 @@ h3 {
 #primaryButton {
   background-color: #f1e6b2;
   color: #496259;
-  padding: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
 }
 
 #secondaryButton {
-  background-color: #f1e6b2;
-  color: #496259;
-  padding: 2px;
+  background-color: #496259;
+  color: #f1e6b2;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
 }
 
 #tertiaryButton {
-  background-color: #f1e6b2;
-  color: #496259;
-  padding: 2px;
+  border: #716b52;
+  color: #716b52;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
 }
