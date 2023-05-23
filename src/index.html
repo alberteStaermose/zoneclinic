@@ -125,7 +125,7 @@
         </div>
       </section>
       <section class="mt-mobilXlarge lg:static lg:mt-webXlarge lg:px-webXlarge">
-        <h2 class="mb-mobilMedium lg:mb-webSmall">Hvem er Jeg</h2>
+        <h2 class="mb-mobilMedium px-mobilSmall lg:mb-webSmall">Hvem er Jeg</h2>
         <article>
           <div class="place-items-center lg:relative lg:grid lg:grid-cols-2">
             <img
@@ -140,7 +140,7 @@
                 <h3 class="mb-mobilSmall lg:pb-webXsmall">
                   Mit navn er Merete...
                 </h3>
-                <p id="bodyBase">
+                <p id="bodyBase" class="mb-mobilMedium">
                   Jeg blev færdiguddannet zoneterapeut i 2021, og har siden da
                   tilbudt behandlinger indenfor dette. Jeg har udvidet mine
                   kompetencer og tilbyder nu også behandlinger indenfor japansk
@@ -155,14 +155,80 @@
           </div>
         </article>
       </section>
-      <section class="mt-webXlarge">
+      <section class="mt-mobilXlarge px-mobilSmall lg:mt-webXlarge">
         <h2 class="mb-mobilMedium lg:mb-webSmall">Hvad siger andre</h2>
-        <h3 class="mb-webSmall">
+        <h3 class="mb-mobilSmall lg:mb-webSmall">
           Læs her hvad andre fortæller om deres oplevelse med ZoneClinic
         </h3>
+        <div class="bg-yellow300">
+          <h3>Her skal der være testimonials</h3>
+        </div>
+        <button id="primaryButton">Book tid</button>
+      </section>
+      <section class="mt-mobilXlarge bg-olive200 px-mobilSmall lg:mt-webXlarge">
+        <article
+          class="px-mobilSmall pb-mobilLarge pt-mobilLarge lg:px-webXlarge"
+        >
+          <div>
+            <h2 class="mb-mobilMedium lg:mb-webSmall">Kontakt mig</h2>
+            <p id="bodyBase">
+              Du er velkommen til at kontakte mig ved spørgsmål angående mine
+              behandlinger eller hvis du er usikker på, om jeg kan hjælpe på
+              lige netop din problemstilling. Jeg vil besvare din henvendelse
+              hurtigst muligt for at give dig den nødvendige information og
+              afklaring.
+            </p>
+          </div>
+          <div>
+            <form class="">
+              <label id="bodyBase" class="hidden" for="fname"> Navn*</label>
+              <input
+                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
+                id="form"
+                type="text"
+                placeholder="Navn*"
+                autocomplete="given-name"
+                required
+              />
+            </form>
+            <form class="">
+              <label id="bodyBase" class="hidden" for="email"> Email* </label>
+              <input
+                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
+                id="form"
+                type="email"
+                placeholder="Email*"
+                autocomplete="email"
+                required
+              />
+            </form>
+            <form class="">
+              <label id="bodyBase" class="hidden" for="text"> Område* </label>
+              <input
+                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
+                id="form"
+                type="text"
+                placeholder="Område*"
+                autocomplete="text"
+                required
+              />
+            </form>
+            <form class="">
+              <label id="bodyBase" class="hidden" for="text"> Besked* </label>
+              <textarea
+                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
+                id="form"
+                type="text"
+                placeholder="Besked*"
+                autocomplete="text"
+                required
+              ></textarea>
+            </form>
+          </div>
+        </article>
       </section>
       <footer>
-        <h3>Dette er en test</h3>
+        <h3>Dette er footer</h3>
       </footer>
     </main>
 

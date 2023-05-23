@@ -127,3 +127,11 @@ h3 {
   border: 2px solid #374037;
   color: #242a24;
 }
+
+#form::placeholder {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  color: #716b52;
+}
