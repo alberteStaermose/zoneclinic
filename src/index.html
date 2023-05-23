@@ -67,16 +67,16 @@
     <main class="absolute top-0 z-0">
       <section
         id="hero_section"
-        class="grid bg-olive400 lg:grid-cols-2 lg:grid-rows-1 lg:gap-4"
+        class="bg-olive400 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-4"
       >
-        <div class="">
+        <div class="hidden lg:block">
           <img
             class="w-fit"
             src="./img/hero_img.png"
             alt="Hero image of a pair of feet"
           />
         </div>
-        <div class="mt-60 ml-10 mr-20">
+        <div class="lg:mt-60 lg:ml-10 lg:mr-20">
           <h1 class="mb-webSmall text-black200">Velkommen til ZoneClinic</h1>
           <p id="bodyBase" class="mb-webSmall text-black400">
             Velkommen til min klinik i Birkerød. Som professionel behandler
@@ -86,9 +86,11 @@
           <button id="primaryButton" class="">Book tid</button>
         </div>
       </section>
-      <section class="bg-yellow300 px-60 pt-webLarge pb-webLarge">
+      <section
+        class="lg:px-webXlarge lg:pt-webLarge lg:pb-webLarge bg-yellow300 px-mobilXlarge"
+      >
         <h2 class="mb-webXsmall">Jeg tilbyder</h2>
-        <div class="grid grid-cols-3 gap-10 text-center">
+        <div class="text-center lg:grid lg:grid-cols-3 lg:gap-10">
           <div class="">
             <h3 class="pb-webXsmall">Zoneterapi</h3>
             <img
@@ -118,17 +120,19 @@
           </div>
         </div>
       </section>
-      <section class="static mt-webXlarge px-60">
+      <section class="lg:px-webXlarge lg:static lg:mt-webXlarge">
         <h2 class="pb-webSmall">Hvem er Jeg</h2>
         <article>
-          <div class="relative grid grid-cols-2 place-items-center">
+          <div class="grid grid-cols-2 place-items-center lg:relative">
             <img
               class=""
               src="./img/placeholderBillede.jpg"
               alt="Billede af Merete"
             />
             <div class="">
-              <div class="absolute left-96 rounded bg-olive400 p-webMedium">
+              <div
+                class="p-webMedium rounded bg-olive400 lg:absolute lg:left-96"
+              >
                 <h3>Mit navn er Merete...</h3>
                 <p id="bodyBase">
                   Jeg blev færdiguddannet zoneterapeut i 2021, og har siden da
