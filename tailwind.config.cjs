@@ -67,7 +67,7 @@ module.exports = {
       /* ALLE SKRIFTSTØRRELSER */
       fontSize: {
         //størrelser til web format
-        size01Web: "4.3rem", 
+        size01Web: "4.3rem",
         size02Web: "2.986rem",
         size03Web: "2.074rem",
 
@@ -88,14 +88,24 @@ module.exports = {
         webMedium: "60px",
         webLarge: "140px",
         webXlarge: "220px",
+        mobilXsmall: "10px",
+        mobilSmall: "25px",
+        mobilMedium: "35px",
+        mobilLarge: "60px",
+        mobilXlarge: "80px",
       },
-      //Margin web
+
       margin: {
         webXsmall: "10px",
         webSmall: "30px",
         webMedium: "60px",
         webLarge: "140px",
         webXlarge: "220px",
+        mobilXsmall: "10px",
+        mobilSmall: "25px",
+        mobilMedium: "35px",
+        mobilLarge: "60px",
+        mobilXlarge: "80px",
       },
     },
   },
