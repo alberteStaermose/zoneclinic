@@ -55,7 +55,7 @@
       </section>
 
       <section id="prices">
-        <div class="bg-yellow300 px-webXlarge py-webLarge">
+        <div class="bg-yellow300 md:px-webXlarge md:py-webLarge lg:px-webXlarge lg:py-webLarge">
           <h2>Priser</h2>
           <p id="bodyBase">
             Hvis du har spørgsmål vedrørende mine priser eller ønsker yderligere oplysninger om en bestemt behandling, er du mere end velkommen til at kontakte mig. Jeg står klar til at besvare dine henvendelser og give dig den bedst mulige
@@ -63,8 +63,8 @@
           </p>
         </div>
 
-        <div id="price_box" class="grid grid-cols-3 place-content-around gap-6 px-webXlarge py-webLarge">
-          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+        <div id="price_box" class="grid place-content-center gap-6 md:mx-webXlarge md:my-webLarge md:grid-cols-2 lg:mx-webXlarge lg:my-webLarge lg:grid-cols-3">
+          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/feet_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:w-auto lg:flex-col">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/face_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -82,7 +82,7 @@
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/hands_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -91,7 +91,7 @@
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/hands_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -100,7 +100,7 @@
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/leaf_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -109,7 +109,7 @@
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/card_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -120,9 +120,15 @@
         </div>
       </section>
 
-      <section id="gift_card">
-        <h2>Køb et gavekort til en du holder af</h2>
-        <p id="bodyBase">Giv en afslappende behandling i gave. Kontakt mig ved køb af gavekort - minimums beløbet er 500 ,-</p>
+      <section id="gift_card" class="grid place-items-center md:mx-webXlarge md:my-webLarge lg:mx-webXlarge lg:grid-cols-2 lg:gap-24 lg:pb-webLarge">
+        <div>
+          <h2>
+            Køb et gavekort <br />
+            til en du holder af
+          </h2>
+          <p id="bodyBase">Giv en afslappende behandling i gave. Kontakt mig ved køb af gavekort - minimums beløbet er 500 ,-</p>
+        </div>
+        <img class="h-auto w-11/12" src="./img/gavekort_final.svg" alt="A giftcard illustration" />
       </section>
 
       <section id="contact_quick_form"></section>
