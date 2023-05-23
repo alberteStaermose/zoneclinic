@@ -93,8 +93,8 @@ h3 {
 }
 
 #tertiaryButton {
-  border: solid;
-  border: 2px;
+  border-style: solid;
+  border-width: 2px;
   border: #716b52;
   color: #716b52;
   padding-top: 4px;
