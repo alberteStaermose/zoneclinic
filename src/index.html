@@ -12,7 +12,7 @@
     <title>ZoneClinic</title>
   </head>
   <body class="relative bg-olive100">
-    <header class="relative z-50">
+    <header class="relative z-50 hidden">
       <div id="navigation" class="flex justify-between p-6">
         <a href="index.html">
           <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24"
@@ -76,43 +76,47 @@
             alt="Hero image of a pair of feet"
           />
         </div>
-        <div class="lg:mt-60 lg:ml-10 lg:mr-20">
-          <h1 class="mb-webSmall text-black200">Velkommen til ZoneClinic</h1>
-          <p id="bodyBase" class="mb-webSmall text-black400">
+        <div
+          class="px-mobilSmall pt-mobilXlarge text-center lg:mt-webLarge lg:ml-10 lg:mr-20 lg:text-left"
+        >
+          <h1 class="mb-mobilMedium text-black200 lg:mb-webSmall">
+            Velkommen til ZoneClinic
+          </h1>
+          <p id="bodyBase" class="mb-mobilMedium text-black400 lg:mb-webSmall">
             Velkommen til min klinik i Birkerød. Som professionel behandler
             tilbyder jeg skræddersyede behandlinger, der er nøje tilpasset dine
             individuelle behov.
           </p>
-          <button id="primaryButton" class="">Book tid</button>
+          <button id="primaryButton" class="mb-mobilLarge">Book tid</button>
         </div>
       </section>
       <section
-        class="lg:px-webXlarge lg:pt-webLarge lg:pb-webLarge bg-yellow300 px-mobilXlarge"
+        class="bg-yellow300 px-mobilSmall pt-mobilLarge pb-mobilLarge lg:px-webXlarge lg:pt-webLarge lg:pb-webLarge"
       >
-        <h2 class="mb-webXsmall">Jeg tilbyder</h2>
+        <h2 class="mb-mobilMedium lg:mb-webSmall">Jeg tilbyder</h2>
         <div class="text-center lg:grid lg:grid-cols-3 lg:gap-10">
-          <div class="">
-            <h3 class="pb-webXsmall">Zoneterapi</h3>
+          <div class="mb-mobilLarge">
+            <h3 class="mb-mobilSmall lg:pb-webXsmall">Zoneterapi</h3>
             <img
-              class="mb-webSmall w-96"
+              class="mb-mobilSmall w-96 lg:mb-webSmall"
               src="./img/zoneterapi.png"
               alt="Illustartion af behandlingen zoneterapi"
             />
             <button id="secondaryButton" class="">Læs mere</button>
           </div>
-          <div>
-            <h3 class="pb-webXsmall">Japansk Lifting</h3>
+          <div class="mb-mobilLarge">
+            <h3 class="mb-mobilSmall lg:pb-webXsmall">Japansk Lifting</h3>
             <img
-              class="mb-webSmall w-96"
+              class="mb-mobilSmall w-96 lg:mb-webSmall"
               src="./img/japanskLifting.png"
               alt="Illustartion af behandlingen Japansk lifting"
             />
             <button id="secondaryButton" class="">Læs mere</button>
           </div>
-          <div>
-            <h3 class="pb-webXsmall">Fysiurgisk Massage</h3>
+          <div class="">
+            <h3 class="mb-mobilSmall lg:pb-webXsmall">Fysiurgisk Massage</h3>
             <img
-              class="mb-webSmall w-96"
+              class="mb-mobilSmall w-96 lg:mb-webSmall"
               src="./img/masage.png"
               alt="Illustartion af behandlingen massage"
             />
@@ -120,20 +124,22 @@
           </div>
         </div>
       </section>
-      <section class="lg:px-webXlarge lg:static lg:mt-webXlarge">
-        <h2 class="pb-webSmall">Hvem er Jeg</h2>
+      <section class="mt-mobilXlarge lg:static lg:mt-webXlarge lg:px-webXlarge">
+        <h2 class="mb-mobilMedium lg:mb-webSmall">Hvem er Jeg</h2>
         <article>
-          <div class="grid grid-cols-2 place-items-center lg:relative">
+          <div class="place-items-center lg:relative lg:grid lg:grid-cols-2">
             <img
-              class=""
+              class="px-mobilSmall"
               src="./img/placeholderBillede.jpg"
               alt="Billede af Merete"
             />
-            <div class="">
+            <div class="bg-olive400">
               <div
-                class="p-webMedium rounded bg-olive400 lg:absolute lg:left-96"
+                class="px-mobilSmall pt-mobilXlarge pb-mobilXlarge lg:rounded lg:p-webMedium"
               >
-                <h3>Mit navn er Merete...</h3>
+                <h3 class="mb-mobilSmall lg:pb-webXsmall">
+                  Mit navn er Merete...
+                </h3>
                 <p id="bodyBase">
                   Jeg blev færdiguddannet zoneterapeut i 2021, og har siden da
                   tilbudt behandlinger indenfor dette. Jeg har udvidet mine
@@ -142,13 +148,15 @@
                   <br />
                   Læs mere om mig og hvorfor jeg er zoneterapeut.
                 </p>
+                <div class="text-center"></div>
+                <button id="secondaryButton">Om mig</button>
               </div>
             </div>
           </div>
         </article>
       </section>
-      <section class="mt-webXlarge px-60">
-        <h2 class="mb-webXsmall">Hvad siger andre</h2>
+      <section class="mt-webXlarge">
+        <h2 class="mb-mobilMedium lg:mb-webSmall">Hvad siger andre</h2>
         <h3 class="mb-webSmall">
           Læs her hvad andre fortæller om deres oplevelse med ZoneClinic
         </h3>
