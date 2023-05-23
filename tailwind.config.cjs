@@ -67,19 +67,9 @@ module.exports = {
       /* ALLE SKRIFTSTØRRELSER */
       fontSize: {
         //størrelser til web format
-        size01Web: [
-          "4.3rem",
-          { letterSpacing: "0.08rem", fontWeight: "100", lineHeight: "79.9px" },
-        ],
-        size02Web: [
-          "2.986rem",
-          { letterSpacing: "0.08rem", fontWeight: "100", lineHeight: "79.9px" },
-        ],
-
-        size03Web: [
-          "2.074rem",
-          { letterSpacing: "0.08rem", fontWeight: "100", lineHeight: "79.9px" },
-        ],
+        size01Web: "4.3rem", 
+        size02Web: "2.986rem",
+        size03Web: "2.074rem",
 
         //størrelser til alle formater (sizeBody passer også til menu links)
         sizeBody: "1rem",

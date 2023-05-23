@@ -3,10 +3,77 @@
 @tailwind utilities;
 
 h1 {
-  font-family: "Bitter", serif;
-  font-weight: 300;
+  font-family: "scotch-display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4.3rem;
 }
 
 h2 {
-  font-size: size02Web;
+  font-family: "scotch-display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.986rem;
+}
+
+h3 {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.074rem;
+}
+
+#bodyMedium {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#bodySmall {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#bodyBase {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#bodyBaseItalic {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#bodyXsmall {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+#menulinks {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#knaptekster {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+
+#primaryButton {
+  background-color: #f1e6b2;
+  color: #496259;
+  padding: 2px;
 }
