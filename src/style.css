@@ -42,6 +42,7 @@ h3 {
   font-weight: 300;
   font-style: normal;
   font-size: 1rem;
+  width: 60ch;
 }
 
 #bodyBaseItalic {
@@ -100,7 +101,7 @@ h3 {
 
 #tertiaryButton {
   border: 2px solid #716b52;
-  color: #716B52;
+  color: #716b52;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 30px;
