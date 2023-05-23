@@ -81,6 +81,9 @@ h3 {
   padding-right: 30px;
   border-radius: 3px;
 }
+#primaryButton:hover {
+  background-color: #ecde99;
+}
 
 #secondaryButton {
   background-color: #496259;
@@ -91,13 +94,21 @@ h3 {
   padding-right: 30px;
   border-radius: 3px;
 }
+#secondaryButton:hover {
+  background-color: #3d514a;
+}
 
 #tertiaryButton {
   border: 2px solid #716b52;
-  color: #716b52;
+  color: #716B52;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 3px;
+}
+
+#tertiaryButton:hover {
+  border: 2px solid #374037;
+  color: #242a24;
 }
