@@ -12,9 +12,55 @@
     <title>Priser</title>
   </head>
 
-  <body>
-    <header></header>
-    <main></main>
+  <body class="relative bg-olive100">
+    <header class="relative z-50">
+      <div id="navigation" class="flex justify-between p-6">
+        <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
+        <nav class="self-start font-menuLinks text-sizeBody font-normal text-black200">
+          <ul class="flex flex-row gap-6">
+            <li class="border-olive900 hover:border-b">
+              <a href="om.html">Om ZoneClinic</a>
+            </li>
+            <div>
+              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
+
+              <!-- Hover dropdown menu -->
+              <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+              </div>
+            </div>
+            <li class="border-olive900 hover:border-b">
+              <a href="priser.html">Priser</a>
+            </li>
+            <li class="border-olive900 hover:border-b">
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900 hover:border-black300 hover:text-black600">
+              <a href="#0">Book Nu</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="absolute top-0 z-0">
+      <section id="hero_section" class="relative">
+        <div class="h-2/4">
+          <img class="z-0 w-screen object-fill" src="./img/hero_img.png" alt="Hero image of a pair of feet" />
+        </div>
+
+        <div class="z-50 mt-9">
+          <h1 class="text-500 font-titel01 text-size01Web font-medium text-black200">Velkommen til ZoneClinic</h1>
+          <p class="font-bodyBase text-sizeBody font-light text-black400">Velkommen til min klinik i Birkerød. Som professionel behandler tilbyder jeg skræddersyede behandlinger, der er nøje tilpasset dine individuelle behov.</p>
+          <button class="bg-yellow500 font-knapTekster text-sizeBody font-normal text-lake500">Book tid</button>
+        </div>
+      </section>
+
+      <section></section>
+    </main>
+
     <footer></footer>
     <script type="module" src="./main.js"></script>
   </body>
