@@ -69,31 +69,16 @@
       </div>
     </header>
     <main class="absolute top-0 z-0">
-      <section id="hero_section" class="">
-        <div>
-          <img
-            class="z-0 w-full"
-            src="./img/lille_hero_overlay.png"
-            alt="Hero image of a pair of feet"
-          />
-        </div>
+      <section id="lille_hero_section" class="relative overflow-hidden">
+        <img class="h-full w-full object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
 
-        <div class="z-50 mt-9">
-          <h1
-            class=""
-          >
-            Om ZoneClinic
-          </h1>
-          <p id="bodyBase">
-            Læs mere om hvem jeg er og hvorfor jeg er zoneterapeut
-          </p>
-          <button
-            class=""
-          >
-            Book tid
-          </button>
+        <div class="text-white absolute bottom-[59px] flex w-full flex-col items-center text-center">
+          <h1>Om ZoneClinic</h1>
+          <p id="bodyBase">Læs mere om hvem jeg er og hvorfor jeg er zoneterapeut</p>
+          <button id="tertiaryButton" class="mt-webSmall">Book tid</button>
         </div>
       </section>
+      
 <!-- indhld på side - section 1 -->
       <section class="bg-olive500 grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-4 px-60 pt-webLarge pb-webLarge">
         <div>
@@ -112,9 +97,21 @@
           <img src="img/closeup_portrait.png" alt="billede af merete">
         </div>
       </section>
+      <footer>
+        <section class="-mt-webLarge">
+          <div class="border-solid border-olive500 grid grid-cols-4">
+            <div>
+              <img src="img/logo.svg" alt="logo">
+            </div>
+            <div>
+              pmckw
+            </div>
+          </div>
+        </section>
+      </footer>
     </main>
 
-    <footer></footer>
+  
     <script type="module" src="./main.js"></script>
   </body>
 </html>
