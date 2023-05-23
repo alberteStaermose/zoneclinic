@@ -18,7 +18,7 @@
           <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24"
         /></a>
         <nav id="menlinks" class="self-start text-black200">
-          <ul class="flex flex-row gap-6">
+          <ul class="flex flex-row items-center gap-6">
             <li class="border-olive900 hover:border-b">
               <a href="om.html">Om ZoneClinic</a>
             </li>
@@ -57,9 +57,9 @@
             <li class="border-olive900 hover:border-b">
               <a href="kontakt.html">Kontakt</a>
             </li>
-            <li>
+            <button id="tertiaryButton" type="button">
               <a href="#0">Book Nu</a>
-            </li>
+            </button>
           </ul>
         </nav>
       </div>
@@ -77,8 +77,8 @@
           />
         </div>
         <div class="mt-60 ml-10 mr-20">
-          <h1 class="text-black200">Velkommen til ZoneClinic</h1>
-          <p id="bodyBase" class="text-black400">
+          <h1 class="mb-webSmall text-black200">Velkommen til ZoneClinic</h1>
+          <p id="bodyBase" class="mb-webSmall text-black400">
             Velkommen til min klinik i Birkerød. Som professionel behandler
             tilbyder jeg skræddersyede behandlinger, der er nøje tilpasset dine
             individuelle behov.
@@ -87,34 +87,34 @@
         </div>
       </section>
       <section class="bg-yellow300 px-60 pt-webLarge pb-webLarge">
-        <h2 class="">Jeg tilbyder</h2>
+        <h2 class="mb-webXsmall">Jeg tilbyder</h2>
         <div class="grid grid-cols-3 gap-10 text-center">
           <div class="">
-            <h3 class="">Zoneterapi</h3>
+            <h3 class="pb-webXsmall">Zoneterapi</h3>
             <img
-              class="mb-webSmall"
+              class="mb-webSmall w-96"
               src="./img/zoneterapi.png"
               alt="Illustartion af behandlingen zoneterapi"
             />
-            <button class="bg-yellow500 text-lake500">Læs mere</button>
+            <button id="secondaryButton" class="">Læs mere</button>
           </div>
           <div>
             <h3 class="pb-webXsmall">Japansk Lifting</h3>
             <img
-              class="mb-webSmall"
+              class="mb-webSmall w-96"
               src="./img/japanskLifting.png"
               alt="Illustartion af behandlingen Japansk lifting"
             />
-            <button class="bg-yellow500 text-lake500">Læs mere</button>
+            <button id="secondaryButton" class="">Læs mere</button>
           </div>
           <div>
             <h3 class="pb-webXsmall">Fysiurgisk Massage</h3>
             <img
-              class="mb-webSmall"
+              class="mb-webSmall w-96"
               src="./img/masage.png"
               alt="Illustartion af behandlingen massage"
             />
-            <button class="bg-yellow500 text-lake500">Læs mere</button>
+            <button id="secondaryButton" class="">Læs mere</button>
           </div>
         </div>
       </section>
@@ -149,9 +149,11 @@
           Læs her hvad andre fortæller om deres oplevelse med ZoneClinic
         </h3>
       </section>
+      <footer>
+        <h3>Dette er en test</h3>
+      </footer>
     </main>
 
-    <footer></footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
