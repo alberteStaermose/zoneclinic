@@ -81,13 +81,19 @@ module.exports = {
         size02Mobile: "2.074rem",
         size03Mobile: "1.44rem",
       },
-      //Padding web
+      //Padding
       padding: {
+        // Web
         webXsmall: "10px",
         webSmall: "30px",
         webMedium: "60px",
         webLarge: "140px",
         webXlarge: "220px",
+
+        // Tablet
+        tabletXlarge: "140px",
+
+        // Mobil
         mobilXsmall: "10px",
         mobilSmall: "25px",
         mobilMedium: "35px",
@@ -96,11 +102,17 @@ module.exports = {
       },
 
       margin: {
+        // Web
         webXsmall: "10px",
         webSmall: "30px",
         webMedium: "60px",
         webLarge: "140px",
         webXlarge: "220px",
+
+        // Tablet
+        tabletXlarge: "140px",
+
+        // Mobil
         mobilXsmall: "10px",
         mobilSmall: "25px",
         mobilMedium: "35px",

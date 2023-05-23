@@ -77,7 +77,7 @@
           />
         </div>
         <div
-          class="px-mobilSmall pt-mobilXlarge text-center lg:mt-webLarge lg:ml-10 lg:mr-20 lg:text-left"
+          class="mx-auto px-mobilSmall pt-mobilXlarge text-center lg:mt-webLarge lg:ml-10 lg:mr-20 lg:text-left"
         >
           <h1 class="mb-mobilMedium text-black200 lg:mb-webSmall">
             Velkommen til ZoneClinic
@@ -91,14 +91,14 @@
         </div>
       </section>
       <section
-        class="bg-yellow300 px-mobilSmall pt-mobilLarge pb-mobilLarge lg:px-webXlarge lg:pt-webLarge lg:pb-webLarge"
+        class="bg-yellow300 px-mobilSmall pt-mobilLarge pb-mobilLarge md:px-tabletXlarge lg:px-webXlarge lg:pt-webLarge lg:pb-webLarge"
       >
         <h2 class="mb-mobilMedium lg:mb-webSmall">Jeg tilbyder</h2>
         <div class="text-center lg:grid lg:grid-cols-3 lg:gap-10">
           <div class="mb-mobilLarge">
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Zoneterapi</h3>
             <img
-              class="mb-mobilSmall w-96 lg:mb-webSmall"
+              class="mx-auto mb-mobilSmall w-96 lg:mb-webSmall"
               src="./img/zoneterapi.png"
               alt="Illustartion af behandlingen zoneterapi"
             />
@@ -107,7 +107,7 @@
           <div class="mb-mobilLarge">
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Japansk Lifting</h3>
             <img
-              class="mb-mobilSmall w-96 lg:mb-webSmall"
+              class="mx-auto mb-mobilSmall w-96 lg:mb-webSmall"
               src="./img/japanskLifting.png"
               alt="Illustartion af behandlingen Japansk lifting"
             />
@@ -116,7 +116,7 @@
           <div class="">
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Fysiurgisk Massage</h3>
             <img
-              class="mb-mobilSmall w-96 lg:mb-webSmall"
+              class="mx-auto mb-mobilSmall w-96 lg:mb-webSmall"
               src="./img/masage.png"
               alt="Illustartion af behandlingen massage"
             />
@@ -124,18 +124,22 @@
           </div>
         </div>
       </section>
-      <section class="mt-mobilXlarge lg:static lg:mt-webXlarge lg:px-webXlarge">
-        <h2 class="mb-mobilMedium px-mobilSmall lg:mb-webSmall">Hvem er Jeg</h2>
+      <section class="mt-mobilXlarge lg:static lg:mx-webXlarge lg:mt-webXlarge">
+        <h2
+          class="mx-mobilSmall mb-mobilMedium md:mx-tabletXlarge lg:mb-webSmall"
+        >
+          Hvem er Jeg
+        </h2>
         <article>
           <div class="place-items-center lg:relative lg:grid lg:grid-cols-2">
             <img
-              class="px-mobilSmall"
+              class="w-full px-mobilSmall md:px-tabletXlarge"
               src="./img/placeholderBillede.jpg"
               alt="Billede af Merete"
             />
             <div class="bg-olive400">
               <div
-                class="px-mobilSmall pt-mobilXlarge pb-mobilXlarge lg:rounded lg:p-webMedium"
+                class="px-mobilSmall pt-mobilXlarge pb-mobilXlarge md:px-tabletXlarge lg:rounded lg:p-webMedium"
               >
                 <h3 class="mb-mobilSmall lg:pb-webXsmall">
                   Mit navn er Merete...
@@ -167,7 +171,7 @@
       </section>
       <section class="mt-mobilXlarge bg-olive200 px-mobilSmall lg:mt-webXlarge">
         <article
-          class="px-mobilSmall pb-mobilLarge pt-mobilLarge lg:px-webXlarge"
+          class="grid gap-20 px-mobilSmall pb-mobilLarge pt-mobilLarge md:grid-cols-2 lg:px-webXlarge"
         >
           <div>
             <h2 class="mb-mobilMedium lg:mb-webSmall">Kontakt mig</h2>
@@ -180,55 +184,120 @@
             </p>
           </div>
           <div>
-            <form class="">
-              <label id="bodyBase" class="hidden" for="fname"> Navn*</label>
-              <input
-                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
-                id="form"
-                type="text"
-                placeholder="Navn*"
-                autocomplete="given-name"
-                required
-              />
-            </form>
-            <form class="">
-              <label id="bodyBase" class="hidden" for="email"> Email* </label>
-              <input
-                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
-                id="form"
-                type="email"
-                placeholder="Email*"
-                autocomplete="email"
-                required
-              />
-            </form>
-            <form class="">
-              <label id="bodyBase" class="hidden" for="text"> Område* </label>
-              <input
-                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
-                id="form"
-                type="text"
-                placeholder="Område*"
-                autocomplete="text"
-                required
-              />
-            </form>
-            <form class="">
-              <label id="bodyBase" class="hidden" for="text"> Besked* </label>
-              <textarea
-                class="border-b-1 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200"
-                id="form"
-                type="text"
-                placeholder="Besked*"
-                autocomplete="text"
-                required
-              ></textarea>
-            </form>
+            <div class="grid gap-10">
+              <form class="">
+                <label class="hidden" for="fname"> Navn*</label>
+                <input
+                  class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                  id="form"
+                  type="text"
+                  placeholder="Navn*"
+                  autocomplete="given-name"
+                  required
+                />
+              </form>
+              <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+                <form class="">
+                  <label class="hidden" for="email"> Email* </label>
+                  <input
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                    id="form"
+                    type="email"
+                    placeholder="Email*"
+                    autocomplete="email"
+                    required
+                  />
+                </form>
+                <form class="">
+                  <label class="hidden" for="text"> Område* </label>
+                  <input
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                    id="form"
+                    type="text"
+                    placeholder="Område*"
+                    autocomplete="text"
+                    required
+                  />
+                </form>
+              </div>
+
+              <form class="">
+                <label class="hidden" for="text"> Besked* </label>
+                <textarea
+                  class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                  id="form"
+                  type="text"
+                  placeholder="Besked*"
+                  autocomplete="text"
+                  required
+                ></textarea>
+              </form>
+              <div class="text-right">
+                <button id="tertiaryButton">Send</button>
+              </div>
+            </div>
           </div>
         </article>
       </section>
-      <footer>
-        <h3>Dette er footer</h3>
+      <!-- footer -->
+      <footer
+        class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall"
+      >
+        <section
+          class="border-t-[3px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0"
+        >
+          <div
+            class="mx-webSmall grid gap-4 md:grid-cols-4 lg:mx-60 lg:grid-cols-4 lg:pt-webMedium"
+          >
+            <div>
+              <img class="h-32" src="img/logo.svg" alt="logo" />
+            </div>
+            <div>
+              <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
+              <p id="bodyBase">
+                ZoneClinic <br />
+                Skovvang 25, <br />
+                3460 Birkerød <br />
+                <br />
+                Tlf: +45 50300744 <br />
+                Email: zoneclinic@gmail.com
+              </p>
+            </div>
+            <div>
+              <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
+              <p id="bodyBase">
+                Mandag: 9-14 <br />
+                Tirsdag: 9-14 <br />
+                Onsdag: 9-14 <br />
+                Torsdag: 9-14 <br />
+                Fredag: 9-14 <br />
+                Lør-Søn: Lukket
+              </p>
+            </div>
+            <div>
+              <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+              <div class="flex flex-row gap-2">
+                <a href="https://www.instagram.com/zoneclinic/" target="_blank">
+                  <img src="img/instagram.png" alt="link til instagram" />
+                </a>
+                <a href="#" target="_blank">
+                  <img src="img/facebook.png" alt="link til facebook" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="border-t-[2px] border-olive500 pt-webSmall lg:mx-60 lg:pt-webXsmall"
+        >
+          <div class="grid grid-cols-3">
+            <div></div>
+            <div>
+              <p id="bodyXsmall">CVR: ?</p>
+            </div>
+            <div id="bodyXsmall">Persondatapolitik | Cookiepolitik</div>
+          </div>
+        </section>
       </footer>
     </main>
 
