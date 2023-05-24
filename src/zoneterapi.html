@@ -11,10 +11,94 @@
 
     <title>Zoneterapi</title>
   </head>
+  <body class="relative bg-olive100">
+    <header class="relative z-50">
+      <div id="navigation" class="flex justify-between p-6">
+        <a href="index.html">
+          <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24"
+        /></a>
+        <nav
+          class="self-start "
+        >
+          <ul class="flex flex-row gap-6">
+            <li class="border-olive900 hover:border-b">
+              <a href="om.html">Om ZoneClinic</a>
+            </li>
+            <div>
+              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
 
-  <body>
-    <header></header>
-    <main></main>
+              <!-- Hover dropdown menu -->
+              <div
+                class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex"
+              >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="zoneterapi.html"
+                  >Zoneterapi</a
+                >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="japansklifting.html"
+                  >Japansk Lifting</a
+                >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="fysiurgiskmassage.html"
+                  >Fysiurgisk Massage</a
+                >
+                <a
+                  class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
+                  href="kombi.html"
+                  >Kombi Behandling</a
+                >
+              </div>
+            </div>
+            <li class="border-olive900 hover:border-b">
+              <a href="priser.html">Priser</a>
+            </li>
+            <li class="border-olive900 hover:border-b">
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li
+              class="rounded-md border-2 border-olive900 px-4 pt-0 pb-0.5 font-knapTekster text-sizeBody font-normal text-olive900 hover:border-black300 hover:text-black600"
+            >
+              <a href="#0">Book Nu</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="absolute top-0 z-0">
+      <section id="lille_hero_section" class="relative overflow-hidden">
+        <img class="h-full w-full object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
+
+        <div class="text-white absolute bottom-[59px] flex w-full flex-col items-center text-center">
+          <h1>Zoneterapi</h1>
+          <p id="bodyBase">Læs mere om hvad behandlingen indebærer og få svar på dine spørgsmål.</p>
+          <button id="tertiaryButton" class="mt-webSmall">Book tid</button>
+        </div>
+      </section>
+    <!-- indhld på side - section 3 -->
+    <section class="grid grid-cols-2 lg:mx-60 lg:mt-webLarge gap-5">
+      <div>
+        <img class="" src="img/massage_feet_2.png" alt="Billede af føøder som bliver masseret">
+      </div>
+      <div>
+        <h3>
+          Hvor mange behandlinger skal  jeg have før jeg kan mærke bedring?
+        </h3>
+        <p id="bodyBase">
+          Det er svært at fastsætte et bestemt antal behandlinger af zoneterapi, som man skal have, før man mærker effekten. Effekten af zoneterapi kan variere fra person til person, og det afhænger også af, hvad der behandles, samt omfanget og alvoren af problemet. <br>
+<br>
+Nogle mennesker kan opleve lindring af symptomer efter blot en eller to behandlinger, mens andre kan have brug for flere behandlinger for at opnå de ønskede resultater. Som zoneterapeut tilpasser jeg behandlingen til dig og dine behov, og jeg vil normalt anbefale en serie af behandlinger for at opnå de bedste resultater. <br>
+<br>
+Det er også vigtigt at bemærke, at zoneterapi kan have en kumulativ effekt, hvilket betyder, at effekten kan opbygge sig over tid, efterhånden som kroppen bliver mere i balance. Derfor kan det være en god idé at prøve zoneterapi i en periode for at evaluere effekten og vurdere, om det er en behandlingsmetode, der kan være til gavn for dig.
+        </p>
+      </div>
+    </section>
+    
+    
+    </main>
     <footer></footer>
     <script type="module" src="./main.js"></script>
   </body>
