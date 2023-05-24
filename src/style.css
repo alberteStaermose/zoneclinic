@@ -71,6 +71,16 @@ h3 {
   color: #2a312a;
 }
 
+#bodyBaseForms {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  max-width: 60ch;
+  /* black500 */
+  color: #716b52;
+}
+
 #bodyBaseItalic {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 300;
@@ -157,4 +167,14 @@ h3 {
 /* underlig firkant */
 #polygon {
   clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+}
+
+/* kontaktformular */
+
+#kontaktformular {
+  background-image: url("img/palme.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  background-position-x: left;
 }

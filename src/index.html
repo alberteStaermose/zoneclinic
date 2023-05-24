@@ -65,6 +65,7 @@
       </div>
     </header>
     <main class="absolute top-0 z-0">
+      <!-- Herosektion -->
       <section
         id="hero_section"
         class="bg-olive400 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-4"
@@ -93,11 +94,16 @@
           <button id="primaryButton" class="mb-mobilLarge">Book tid</button>
         </div>
       </section>
+      <!--  -->
+      <!--  -->
+      <!-- Sektion med "Jeg tilbyder" -->
       <section
-        class="md:pt-tabXletLarge bg-yellow300 px-mobilSmall pt-mobilXlarge pb-mobilXlarge md:px-tabletLarge lg:px-webLarge lg:pt-webLarge lg:pb-webLarge"
+        class="bg-yellow300 px-mobilSmall py-mobilLarge md:px-tabletXlarge md:py-tabletLarge lg:px-webXlarge lg:py-webLarge"
       >
         <h2 class="mb-mobilMedium lg:mb-webSmall">Jeg tilbyder</h2>
+        <!-- De tre behandlingstyper i kolonner herunder" -->
         <div class="text-center lg:grid lg:grid-cols-3 lg:gap-10">
+          <!-- Zoneterapikolonne" -->
           <div class="mb-mobilLarge">
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Zoneterapi</h3>
             <img
@@ -107,6 +113,7 @@
             />
             <button id="secondaryButton" class="">Læs mere</button>
           </div>
+          <!-- Japansk lifting kolonne" -->
           <div class="mb-mobilLarge">
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Japansk Lifting</h3>
             <img
@@ -116,6 +123,7 @@
             />
             <button id="secondaryButton" class="">Læs mere</button>
           </div>
+          <!-- massage kolonne -->
           <div class="">
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Fysiurgisk Massage</h3>
             <img
@@ -127,12 +135,13 @@
           </div>
         </div>
       </section>
+      <!--  -->
+      <!--  -->
+      <!-- sektion om Merete -->
       <section
-        class="mt-mobilXlarge md:mt-tabletLarge lg:static lg:mx-webXlarge lg:mt-webXlarge"
+        class="mt-mobilXlarge md:mt-tabletXlarge lg:static lg:mx-webXlarge lg:mt-webXlarge"
       >
-        <h2
-          class="mx-mobilSmall mb-mobilMedium md:mx-tabletXlarge lg:mb-webSmall"
-        >
+        <h2 class="mx-mobilSmall mb-mobilMedium md:mx-tabletXlarge">
           Hvem er Jeg
         </h2>
         <article>
@@ -164,7 +173,12 @@
           </div>
         </article>
       </section>
-      <section class="mt-mobilXlarge px-mobilSmall lg:mt-webXlarge">
+      <!--  -->
+      <!--  -->
+      <!-- sektion med testimonials -->
+      <section
+        class="px-mobilSmall pt-mobilXlarge md:px-tabletXlarge md:pt-tabletXlarge lg:px-webXlarge lg:pt-webXlarge"
+      >
         <h2 class="mb-mobilMedium lg:mb-webSmall">Hvad siger andre</h2>
         <h3 class="mb-mobilSmall lg:mb-webSmall">
           Læs her hvad andre fortæller om deres oplevelse med ZoneClinic
@@ -174,13 +188,21 @@
         </div>
         <button id="primaryButton">Book tid</button>
       </section>
-      <section class="mt-mobilXlarge bg-olive200 px-mobilSmall lg:mt-webXlarge">
+      <!--  -->
+      <!--  -->
+      <!-- Kontaktformular -->
+      <section
+        id="kontaktformular"
+        class="mt-mobilXlarge bg-olive200 px-mobilSmall pb-mobilLarge pt-mobilLarge md:mt-tabletXlarge lg:mt-webXlarge"
+      >
         <article
-          class="grid gap-20 px-mobilSmall pb-mobilLarge pt-mobilLarge md:grid-cols-2 lg:px-webXlarge"
+          class="grid gap-20 px-mobilSmall md:grid-cols-2 lg:px-webXlarge"
         >
           <div>
-            <h2 class="mb-mobilMedium lg:mb-webSmall">Kontakt mig</h2>
-            <p id="bodyBase">
+            <h2 class="mb-mobilMedium text-olive900 lg:mb-webSmall">
+              Kontakt mig
+            </h2>
+            <p id="bodyBaseForms">
               Du er velkommen til at kontakte mig ved spørgsmål angående mine
               behandlinger eller hvis du er usikker på, om jeg kan hjælpe på
               lige netop din problemstilling. Jeg vil besvare din henvendelse
@@ -193,7 +215,7 @@
               <form class="">
                 <label class="hidden" for="fname"> Navn*</label>
                 <input
-                  class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                  class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
                   id="form"
                   type="text"
                   placeholder="Navn*"
@@ -205,7 +227,7 @@
                 <form class="">
                   <label class="hidden" for="email"> Email* </label>
                   <input
-                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
                     id="form"
                     type="email"
                     placeholder="Email*"
@@ -216,7 +238,7 @@
                 <form class="">
                   <label class="hidden" for="text"> Emne* </label>
                   <input
-                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
                     id="form"
                     type="text"
                     placeholder="Område*"
@@ -229,7 +251,7 @@
               <form class="">
                 <label class="hidden" for="text"> Besked* </label>
                 <textarea
-                  class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                  class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
                   id="form"
                   type="text"
                   placeholder="Besked*"
@@ -244,6 +266,8 @@
           </div>
         </article>
       </section>
+      <!--  -->
+      <!--  -->
       <!-- footer -->
       <footer
         class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall"

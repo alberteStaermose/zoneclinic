@@ -86,10 +86,20 @@
       </section>
 
       <!-- indhld på side - section 1 -->
+
+      <!-- px-mobilSmall py-mobilLarge md:px-tabletXlarge md:py-tabletLarge
+      lg:px-webXlarge lg:py-webLarge -->
+
+      <!-- px-mobilSmall py-mobilXlarge md:px-tabletXlarge md:py-tabletXlarge
+      lg:px-webXlarge lg:py-webXlarge -->
+
+      <!--  -->
+      <!--  -->
+      <!-- Sektion om merete -->
       <section
-        class="grid bg-olive500 pt-mobilXlarge sm:pb-mobilXlarge md:pt-tabletLarge lg:grid-cols-2 lg:grid-rows-1 lg:gap-4 lg:px-60 lg:pt-webLarge lg:pb-webLarge"
+        class="grid bg-olive500 px-mobilSmall py-mobilLarge sm:mx-auto md:px-tabletXlarge md:py-tabletLarge lg:grid-cols-2 lg:grid-rows-1 lg:gap-4 lg:px-webXlarge lg:py-webLarge"
       >
-        <div class="mx-webSmall sm:mx-auto">
+        <div class="sm:mx-auto">
           <h2 class="mb-mobilMedium lg:mb-webSmall">Hvem er jeg</h2>
           <p id="bodyBase" class="mb-mobilMedium lg:mb-webSmall">
             Mit navn er Merete og jeg er 55 år gammel. Jeg er uddannet grafiker
@@ -116,7 +126,7 @@
             opdateret og lære mere for at kunne hjælpe mine klienter bedst
             muligt.
           </p>
-          <div class="mx-webSmall w-40 pt-10 pb-webMedium">
+          <div class="w-40 pt-10 pb-webMedium">
             <img
               src="img/merete_underskrift.svg"
               alt="merete merete_underskrift"
@@ -127,23 +137,101 @@
           <img src="img/closeup_portrait.png" alt="billede af merete" />
         </div>
       </section>
-      <section class="pt-mobilXlarge md:pt-tabletLarge lg:pt-webLarge">
-        <h3>Kontaktformula</h3>
+
+      <!--  -->
+      <!--  -->
+      <!-- Kontaktformular -->
+      <section
+        id="kontaktformular"
+        class="mt-mobilXlarge bg-olive200 px-mobilSmall pb-mobilLarge pt-mobilLarge md:mt-tabletXlarge lg:mt-webXlarge"
+      >
+        <article
+          class="grid gap-20 px-mobilSmall md:grid-cols-2 lg:px-webXlarge"
+        >
+          <div>
+            <h2 class="mb-mobilMedium text-olive900 lg:mb-webSmall">
+              Kontakt mig
+            </h2>
+            <p id="bodyBaseForms">
+              Du er velkommen til at kontakte mig ved spørgsmål angående mine
+              behandlinger eller hvis du er usikker på, om jeg kan hjælpe på
+              lige netop din problemstilling. Jeg vil besvare din henvendelse
+              hurtigst muligt for at give dig den nødvendige information og
+              afklaring.
+            </p>
+          </div>
+          <div>
+            <div class="grid gap-10">
+              <form class="">
+                <label class="hidden" for="fname"> Navn*</label>
+                <input
+                  class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                  id="form"
+                  type="text"
+                  placeholder="Navn*"
+                  autocomplete="given-name"
+                  required
+                />
+              </form>
+              <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+                <form class="">
+                  <label class="hidden" for="email"> Email* </label>
+                  <input
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                    id="form"
+                    type="email"
+                    placeholder="Email*"
+                    autocomplete="email"
+                    required
+                  />
+                </form>
+                <form class="">
+                  <label class="hidden" for="text"> Emne* </label>
+                  <input
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                    id="form"
+                    type="text"
+                    placeholder="Område*"
+                    autocomplete="text"
+                    required
+                  />
+                </form>
+              </div>
+
+              <form class="">
+                <label class="hidden" for="text"> Besked* </label>
+                <textarea
+                  class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                  id="form"
+                  type="text"
+                  placeholder="Besked*"
+                  autocomplete="text"
+                  required
+                ></textarea>
+              </form>
+              <div class="text-right">
+                <button id="tertiaryButton">Send</button>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
+      <!--  -->
+      <!--  -->
       <!-- footer -->
       <footer
         class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall"
       >
         <section
-          class="border-t-[3px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0"
+          class="border-t-[3px] border-b-[2px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0"
         >
           <div
-            class="mx-webSmall grid gap-4 md:grid-cols-4 lg:mx-60 lg:grid-cols-4 lg:pt-webMedium"
+            class="mx-webSmall grid place-content-evenly gap-4 text-center md:grid-cols-4 md:text-left lg:pt-webMedium"
           >
             <div>
-              <img class="h-32" src="img/logo.svg" alt="logo" />
+              <img class="mx-auto h-32" src="img/logo.svg" alt="logo" />
             </div>
-            <div>
+            <div class="mx-auto">
               <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
               <p id="bodyBase">
                 ZoneClinic <br />
@@ -154,7 +242,7 @@
                 Email: zoneclinic@gmail.com
               </p>
             </div>
-            <div>
+            <div class="mx-auto">
               <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
               <p id="bodyBase">
                 Mandag: 9-14 <br />
@@ -165,28 +253,34 @@
                 Lør-Søn: Lukket
               </p>
             </div>
-            <div>
+            <div class="mx-auto">
               <p id="bodyMedium" class="lg:pb-2">Følg med</p>
               <div class="flex flex-row gap-2">
                 <a href="https://www.instagram.com/zoneclinic/" target="_blank">
-                  <img src="img/instagram.png" alt="link til instagram" />
+                  <img
+                    class="h-11 w-11"
+                    src="./img/instagram.svg"
+                    alt="link til instagram"
+                  />
                 </a>
                 <a href="#" target="_blank">
-                  <img src="img/facebook.png" alt="link til facebook" />
+                  <img
+                    class="h-11 w-11"
+                    src="./img/facebook.svg"
+                    alt="link til facebook"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <section
-          class="border-t-[2px] border-olive500 pt-webSmall lg:mx-60 lg:pt-webXsmall"
-        >
-          <div class="grid grid-cols-3">
-            <div></div>
+        <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
+          <div class="mx-auto grid grid-cols-3 text-center">
             <div>
               <p id="bodyXsmall">CVR: ?</p>
             </div>
-            <div id="bodyXsmall">Persondatapolitik | Cookiepolitik</div>
+            <div id="bodyXsmall">Persondatapolitik</div>
+            <div id="bodyXsmall">Cookiepolitik</div>
           </div>
         </section>
       </footer>
