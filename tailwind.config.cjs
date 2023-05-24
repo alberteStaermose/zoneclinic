@@ -111,6 +111,7 @@ module.exports = {
         webXlarge: "220px",
 
         // Tablet
+        tabletLarge: "110px",
         tabletXlarge: "140px",
 
         // Mobil
