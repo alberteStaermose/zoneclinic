@@ -85,9 +85,61 @@
           <p id="bodyBase">Jeg vil gerne høre fra dig! Har du spørgsmål, kommentarer eller ønsker du at booke en aftale, er du velkommen til at kontakte mig via nedenstående kontaktinformation. Jeg står klar til at hjælpe dig og besvare dine henvendelser så hurtigt som muligt. Du kan kontakte mig enten via telefon, 
             e-mail eller ved at udfylde kontaktformularen nedenfor.</p>
         </div>
-        <div></div>
-        <div class="bg-olive200 w-96 h-96 mx-auto">
-          <p>form</p>
+        
+        <div class="bg-olive200 w-96  mx-auto p-10 py-14 rounded">
+            <div class="grid gap-14">
+              <form class="">
+                <label class="hidden" for="fname"> Navn*</label>
+                <input
+                  class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                  id="form"
+                  type="text"
+                  placeholder="Navn*"
+                  autocomplete="given-name"
+                  required
+                />
+              </form>
+              <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+                <form class="">
+                  <label class="hidden" for="email"> Email* </label>
+                  <input
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                    id="form"
+                    type="email"
+                    placeholder="Email*"
+                    autocomplete="email"
+                    required
+                  />
+                </form>
+                <form class="">
+                  <label class="hidden" for="text"> Emne* </label>
+                  <input
+                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                    id="form"
+                    type="text"
+                    placeholder="Område*"
+                    autocomplete="text"
+                    required
+                  />
+                </form>
+              </div>
+
+              <form class="">
+                <label class="hidden" for="text"> Besked* </label>
+                <textarea
+                  class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0"
+                  id="form"
+                  type="text"
+                  placeholder="Besked*"
+                  autocomplete="text"
+                  required
+                ></textarea>
+              </form>
+              <div class="text-right">
+                <button id="tertiaryButton">Send</button>
+              </div>
+            </div>
+         
         </div>
       </section>
 <!-- indhld på side - section 2 -->
