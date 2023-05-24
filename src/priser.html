@@ -44,6 +44,7 @@
       </div>
     </header>
     <main class="absolute top-0 z-0">
+      <!-- Lille Hero sektion -->
       <section id="lille_hero_section" class="relative overflow-hidden">
         <img class="h-full w-full object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
 
@@ -54,8 +55,9 @@
         </div>
       </section>
 
+      <!-- Pris overskriften + brødtekst -->
       <section id="prices">
-        <div class="bg-yellow300 px-mobilSmall py-mobilSmall md:px-tabletXlarge md:py-tabletXlarge lg:px-webXlarge lg:py-webLarge">
+        <div class="bg-yellow300 px-mobilSmall py-mobilLarge md:px-tabletXlarge md:py-tabletLarge lg:px-webXlarge lg:py-webLarge">
           <h2>Priser</h2>
           <p id="bodyBase">
             Hvis du har spørgsmål vedrørende mine priser eller ønsker yderligere oplysninger om en bestemt behandling, er du mere end velkommen til at kontakte mig. Jeg står klar til at besvare dine henvendelser og give dig den bedst mulige
@@ -63,8 +65,10 @@
           </p>
         </div>
 
-        <div id="price_box" class="grid place-content-center gap-6 sm:mx-mobilSmall sm:my-mobilSmall md:mx-tabletXlarge md:my-tabletXlarge md:grid-cols-2 lg:mx-webXlarge lg:my-webLarge lg:grid-cols-3">
-          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
+        <!-- Grid med alle pris boksene -->
+        <div id="price_box" class="mx-mobilSmall my-mobilXlarge grid place-content-center gap-6 md:mx-tabletXlarge md:my-tabletXlarge md:grid-cols-2 lg:mx-webXlarge lg:my-webXlarge lg:grid-cols-3">
+          <!-- Pris boks Zoneterapi -->
+          <div class="flex h-[250px] w-72 flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-full">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/feet_icon.svg" alt="Icon of a pair of feet" />
             <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
@@ -73,54 +77,64 @@
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:w-auto lg:flex-col">
+          <!-- Pris boks Japansk Lifting -->
+          <div class="flex h-[250px] w-full flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/face_icon.svg" alt="Icon of a pair of feet" />
-            <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+            <p id="bodyMedium" class="pt-webSmall">Japansk Lifting</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
-              <p id="bodyBase">50 minutter</p>
+              <p id="bodyBase">60 minutter</p>
               <p id="bodySmall">500,-</p>
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
+          <!-- Pris boks Fysiurgisk Massage  -->
+          <div class="flex h-[250px] w-full flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/hands_icon.svg" alt="Icon of a pair of feet" />
-            <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+            <p id="bodyMedium" class="pt-webSmall">Fysiurgisk Massage</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
-              <p id="bodyBase">50 minutter</p>
-              <p id="bodySmall">500,-</p>
+              <p id="bodyBase">75 minutter</p>
+              <p id="bodySmall">600,-</p>
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
+          <!-- Pris boks Skadesbehandling Massage -->
+          <div class="flex h-[250px] w-full flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/hands_icon.svg" alt="Icon of a pair of feet" />
-            <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+            <p id="bodyMedium" class="pt-webSmall">Skadesbehandling Massage</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
-              <p id="bodyBase">50 minutter</p>
-              <p id="bodySmall">500,-</p>
+              <p id="bodyBase">30 minutter</p>
+              <p id="bodySmall">300,-</p>
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
+          <!-- Pris boks Alle Kombi Behandlinger -->
+          <div class="flex h-[250px] w-full flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/leaf_icon.svg" alt="Icon of a pair of feet" />
-            <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+            <p id="bodyMedium" class="pt-webSmall">Alle Kombi Behandlinger</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
-              <p id="bodyBase">50 minutter</p>
-              <p id="bodySmall">500,-</p>
+              <p id="bodyBase">90 minutter</p>
+              <p id="bodySmall">650,-</p>
             </div>
           </div>
 
-          <div class="flex h-[250px] w-auto items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:flex-col lg:flex-col">
+          <!-- Pris boks Klippekort & Gavekort -->
+          <div class="flex h-[250px] w-full flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/card_icon.svg" alt="Icon of a pair of feet" />
-            <p id="bodyMedium" class="pt-webSmall">Zoneterapi</p>
+            <p id="bodyMedium" class="pt-webSmall">Klippekort & Gavekort</p>
             <div class="flex flex-row gap-4 pt-webXsmall">
-              <p id="bodyBase">50 minutter</p>
+              <p id="bodyBase">Klippekort - 4 klip</p>
+              <p id="bodySmall">1800,-</p>
+            </div>
+            <div class="flex flex-row gap-4 pt-webXsmall">
+              <p id="bodyBase">Gavekort min. pris</p>
               <p id="bodySmall">500,-</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="gift_card" class="grid sm:mx-mobilSmall sm:my-mobilSmall md:mx-tabletXlarge md:my-tabletXlarge md:grid-cols-2 md:place-items-center md:gap-6 lg:mx-webXlarge lg:grid-cols-2 lg:place-items-center lg:gap-24 lg:pb-webLarge">
+      <!-- Gavekort sektionen -->
+      <section id="gift_card" class="mx-mobilSmall mb-mobilXlarge grid place-items-center gap-6 md:mx-tabletXlarge md:mb-tabletXlarge lg:mx-webXlarge lg:mb-webXlarge lg:grid-cols-2 lg:gap-24">
         <div>
           <h2>
             Køb et gavekort <br />
@@ -128,13 +142,65 @@
           </h2>
           <p id="bodyBase">Giv en afslappende behandling i gave. Kontakt mig ved køb af gavekort - minimums beløbet er 500 ,-</p>
         </div>
-        <img class="h-auto md:w-full lg:w-11/12" src="./img/gavekort_final.svg" alt="A giftcard illustration" />
+        <img class="h-auto md:w-9/12 lg:w-11/12" src="./img/gavekort_final.svg" alt="A giftcard illustration" />
       </section>
 
+      <!-- Kontakt sektionen -->
       <section id="contact_quick_form"></section>
-    </main>
 
-    <footer></footer>
+      <!-- footer -->
+      <footer class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall">
+        <section class="border-t-[3px] border-b-[2px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0">
+          <div class="mx-webSmall grid place-content-evenly gap-4 text-center md:grid-cols-4 md:text-left lg:pt-webMedium">
+            <div>
+              <img class="mx-auto h-32" src="img/logo.svg" alt="logo" />
+            </div>
+            <div class="mx-auto">
+              <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
+              <p id="bodyBase">
+                ZoneClinic <br />
+                Skovvang 25, <br />
+                3460 Birkerød <br />
+                <br />
+                Tlf: +45 50300744 <br />
+                Email: zoneclinic@gmail.com
+              </p>
+            </div>
+            <div class="mx-auto">
+              <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
+              <p id="bodyBase">
+                Mandag: 9-14 <br />
+                Tirsdag: 9-14 <br />
+                Onsdag: 9-14 <br />
+                Torsdag: 9-14 <br />
+                Fredag: 9-14 <br />
+                Lør-Søn: Lukket
+              </p>
+            </div>
+            <div class="mx-auto">
+              <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+              <div class="flex flex-row gap-2">
+                <a href="https://www.instagram.com/zoneclinic/" target="_blank">
+                  <img class="h-11 w-11" src="./img/instagram.svg" alt="link til instagram" />
+                </a>
+                <a href="#" target="_blank">
+                  <img class="h-11 w-11" src="./img/facebook.svg" alt="link til facebook" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
+          <div class="mx-auto grid grid-cols-3 text-center">
+            <div>
+              <p id="bodyXsmall">CVR: ?</p>
+            </div>
+            <div id="bodyXsmall">Persondatapolitik</div>
+            <div id="bodyXsmall">Cookiepolitik</div>
+          </div>
+        </section>
+      </footer>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
