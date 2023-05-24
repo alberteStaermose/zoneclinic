@@ -79,9 +79,9 @@
         </div>
       </section>
 <!-- indhld på side - section 2 -->
-      <section class="grid grid-cols-3">
+      <section class="grid grid-cols-3 lg:mt-webXlarge">
         <div id="polygon" class="bg-yellow300 col-span-2">
-          <div class="pl-60 pt-webMedium pb-webMedium">
+          <div class="lg:pl-60 pl-webSmall lg:pt-webLarge lg:pb-webLarge">
           <h2>Læs om zoneterapi her</h2>
           <h3>Hvad er zoneterapi</h3>
           <hr class="w-40 h-0.3 mx-0 my-1 bg-black500 rounded mb-5 mt-2 justify-items-start">
@@ -94,7 +94,7 @@
             Som zoneterapeut skræddersyr jeg behandlingen til dit behov, så jeg kan hjælpe på lige netop dine problemer. </p>
           </div>
           </div>
-          <div class="">
+          <div>
             <img src="img/plante1.svg" alt="illustration af plante">
           </div>
       </section>
@@ -107,11 +107,11 @@
 
 
     <!-- indhld på side - section 3 -->
-    <section class="grid md:grid-cols-2 lg:mx-60 lg:mt-webLarge gap-5">
+    <section class="grid md:grid-cols-2 lg:mx-60 lg:mt-webXlarge gap-5 mt-webSmall">
       <div>
         <img class="" src="img/massage_feet_2.png" alt="Billede af føøder som bliver masseret">
       </div>
-      <div>
+      <div class="pt-webSmall md:pt-0 mx-webSmall">
         <h3>
           Hvor mange behandlinger skal  jeg have før jeg kan mærke bedring?
         </h3>
@@ -126,8 +126,8 @@ Det er også vigtigt at bemærke, at zoneterapi kan have en kumulativ effekt, hv
       </div>
     </section>
     <!-- indhld på side - section 4 -->
-    <section class="grid grid-cols-2 lg:mt-webLarge lg:mx-60">
-      <div>
+    <section class="grid grid-cols-2 lg:mt-webXlarge lg:mx-60">
+      <div class="pt-webSmall md:pt-0 mx-webSmall">
         <h3>
           Hvad kan zoneterapi hjælpe på
         </h3>
@@ -147,14 +147,14 @@ Det er også vigtigt at bemærke, at zoneterapi kan have en kumulativ effekt, hv
           <li>Generel afslapning og velvære.</li>
         </p>
       </div>
-      <div>
+      <div class="pt-webSmall">
         <img src="img/plant2.svg" alt="illustration af plante">
       </div>
     </section>
     <!-- indhld på side - section 5 -->
-    <section class="lg:mt-webLarge">
-      <div id="price_box" class="place-content-around gap-6 px-webXlarge pb-webLarge flex items-center">
-        <div class="flex h-300px] w-[400px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+    <section class="lg:mt-webXlarge mt-webSmall">
+      <div id="price_box" class="place-content-around gap-6 px-webXlarge flex items-center">
+        <div class="flex w-[400px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
           <div class="gap-4 pt-webSmall pb-webSmall px-webSmall">
             <h2>Jeg Anbefaler</h2>
             <p id="bodyBase" class="pb-webSmall">Jeg anbefaler at bruge zoneterapi som et supplement til lægelig videnskab, da man aldrig kun må gå til en zoneterapeut uden at tale med sin læge om ens symptomer.  </p>
@@ -165,7 +165,150 @@ Det er også vigtigt at bemærke, at zoneterapi kan have en kumulativ effekt, hv
         </div>
       </div>
     </section>
+       <!-- Kontaktformular -->
+       <section
+       id="kontaktformular"
+       class="mt-mobilXlarge bg-olive200 px-mobilSmall pb-mobilLarge pt-mobilLarge md:mt-tabletXlarge lg:mt-webXlarge"
+     >
+       <article
+         class="grid gap-20 px-mobilSmall md:grid-cols-2 lg:px-webXlarge"
+       >
+         <div>
+           <h2 class="mb-mobilMedium text-olive900 lg:mb-webSmall">
+             Kontakt mig
+           </h2>
+           <p id="bodyBaseForms">
+             Du er velkommen til at kontakte mig ved spørgsmål angående mine
+             behandlinger eller hvis du er usikker på, om jeg kan hjælpe på
+             lige netop din problemstilling. Jeg vil besvare din henvendelse
+             hurtigst muligt for at give dig den nødvendige information og
+             afklaring.
+           </p>
+         </div>
+         <div>
+           <div class="grid gap-10">
+             <form class="">
+               <label class="hidden" for="fname"> Navn*</label>
+               <input
+                 class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                 id="form"
+                 type="text"
+                 placeholder="Navn*"
+                 autocomplete="given-name"
+                 required
+               />
+             </form>
+             <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+               <form class="">
+                 <label class="hidden" for="email"> Email* </label>
+                 <input
+                   class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                   id="form"
+                   type="email"
+                   placeholder="Email*"
+                   autocomplete="email"
+                   required
+                 />
+               </form>
+               <form class="">
+                 <label class="hidden" for="text"> Emne* </label>
+                 <input
+                   class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                   id="form"
+                   type="text"
+                   placeholder="Emne*"
+                   autocomplete="text"
+                   required
+                 />
+               </form>
+             </div>
 
+             <form class="">
+               <label class="hidden" for="text"> Besked* </label>
+               <textarea
+                 class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
+                 id="form"
+                 type="text"
+                 placeholder="Besked*"
+                 autocomplete="text"
+                 required
+               ></textarea>
+             </form>
+             <div class="text-right">
+               <button id="tertiaryButton">Send</button>
+             </div>
+           </div>
+         </div>
+       </article>
+     </section>
+     <!--  -->
+     <!--  -->
+     <!-- footer -->
+     <footer
+       class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall"
+     >
+       <section
+         class="border-t-[3px] border-b-[2px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0"
+       >
+         <div
+           class="mx-webSmall grid place-content-evenly gap-4 text-center md:grid-cols-4 md:text-left lg:pt-webMedium"
+         >
+           <div>
+             <img class="mx-auto h-32" src="img/logo.svg" alt="logo" />
+           </div>
+           <div class="mx-auto">
+             <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
+             <p id="bodyBase">
+               ZoneClinic <br />
+               Skovvang 25, <br />
+               3460 Birkerød <br />
+               <br />
+               Tlf: +45 50300744 <br />
+               Email: zoneclinic@gmail.com
+             </p>
+           </div>
+           <div class="mx-auto">
+             <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
+             <p id="bodyBase">
+               Mandag: 9-14 <br />
+               Tirsdag: 9-14 <br />
+               Onsdag: 9-14 <br />
+               Torsdag: 9-14 <br />
+               Fredag: 9-14 <br />
+               Lør-Søn: Lukket
+             </p>
+           </div>
+           <div class="mx-auto">
+             <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+             <div class="flex flex-row gap-2">
+               <a href="https://www.instagram.com/zoneclinic/" target="_blank">
+                 <img
+                   class="h-11 w-11"
+                   src="./img/instagram.svg"
+                   alt="link til instagram"
+                 />
+               </a>
+               <a href="#" target="_blank">
+                 <img
+                   class="h-11 w-11"
+                   src="./img/facebook.svg"
+                   alt="link til facebook"
+                 />
+               </a>
+             </div>
+           </div>
+         </div>
+       </section>
+       <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
+         <div class="mx-auto grid grid-cols-3 text-center">
+           <div>
+             <p id="bodyXsmall">CVR: ?</p>
+           </div>
+           <div id="bodyXsmall">Persondatapolitik</div>
+           <div id="bodyXsmall">Cookiepolitik</div>
+         </div>
+       </section>
+     </footer>
 
 
     </main>
