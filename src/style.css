@@ -154,9 +154,7 @@ h3 {
   color: #716b52;
 }
 
-/* map på kontakt */
-/* iframe {
-  height: 300px;
-  min-width: 720px;
-  width: 72vw;
-} */
+/* underlig firkant */
+.polygon {
+  clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+}
