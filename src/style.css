@@ -178,3 +178,41 @@ h3 {
   background-position: left;
   background-position-x: left;
 }
+
+/* Testimonials card components styling */
+
+@layer components {
+  .card {
+    background-color: theme("colors.yellow500");
+    border-radius: 3px;
+    padding: 2rem;
+    width: 33vw;
+    max-width: 330px;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px;
+
+    background-image: url("img/palme.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: center;
+  }
+
+  .card:last-child {
+    margin-right: 15px;
+  }
+
+  .card:last-child::after {
+    content: " ";
+    display: inline-block;
+  }
+
+  #carrousel_flexbox .card {
+    flex: 0 0 auto;
+  }
+}
