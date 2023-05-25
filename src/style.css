@@ -126,6 +126,7 @@ h3 {
 }
 #primaryButton:hover {
   background-color: #ecde99;
+  transform: scale(0.97);
 }
 
 #secondaryButton {
@@ -139,6 +140,7 @@ h3 {
 }
 #secondaryButton:hover {
   background-color: #3d514a;
+  transform: scale(0.97);
 }
 
 #tertiaryButton {
