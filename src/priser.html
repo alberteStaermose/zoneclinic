@@ -13,10 +13,10 @@
   </head>
 
   <body class="relative bg-olive100">
-    <header class="relative z-50">
+    <header class="relative z-50 hidden md:block">
       <div id="navigation" class="flex justify-between p-6">
         <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
-        <nav class="self-start font-menuLinks text-sizeBody font-normal text-black200">
+        <nav id="menulinks" class="self-start">
           <ul class="flex flex-row items-center gap-6">
             <li class="border-olive900 hover:border-b">
               <a href="om.html">Om ZoneClinic</a>
@@ -38,7 +38,9 @@
             <li class="border-olive900 hover:border-b">
               <a href="kontakt.html">Kontakt</a>
             </li>
-            <button id="tertiaryButton" type="button"><a href="#0">Book Nu</a></button>
+            <button id="tertiaryButton" type="button">
+              <a href="#0">Book Nu</a>
+            </button>
           </ul>
         </nav>
       </div>
@@ -47,6 +49,7 @@
       <!-- Lille Hero sektion -->
       <section id="lille_hero_section" class="relative">
         <img class="h-96 object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
+
         <div class="text-white absolute top-28 flex w-full flex-col items-center text-center">
           <h1>Priser</h1>
           <p id="bodyBase">Se hvad mine behandlinger koster her</p>

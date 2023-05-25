@@ -13,8 +13,50 @@
   </head>
 
   <body>
-    <header></header>
-    <main></main>
+    <header class="relative z-50 hidden md:block">
+      <div id="navigation" class="flex justify-between p-6">
+        <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
+        <nav id="menulinks" class="self-start">
+          <ul class="flex flex-row items-center gap-6">
+            <li class="border-olive900 hover:border-b">
+              <a href="om.html">Om ZoneClinic</a>
+            </li>
+            <div>
+              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
+
+              <!-- Hover dropdown menu -->
+              <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+              </div>
+            </div>
+            <li class="border-olive900 hover:border-b">
+              <a href="priser.html">Priser</a>
+            </li>
+            <li class="border-olive900 hover:border-b">
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+            <button id="tertiaryButton" type="button">
+              <a href="#0">Book Nu</a>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="absolute top-0 z-0">
+      <!-- Lille Hero sektion -->
+      <section id="lille_hero_section" class="relative">
+        <img class="h-96 object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
+
+        <div class="text-white absolute top-28 flex w-full flex-col items-center text-center">
+          <h1>Fysiurgisk Massage</h1>
+          <p id="bodyBase">Læs mere om hvad behandlingen indebærer og få svar på dine spørgsmål</p>
+          <button id="tertiaryButton" class="mt-webSmall">Book tid</button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script type="module" src="./main.js"></script>
   </body>
