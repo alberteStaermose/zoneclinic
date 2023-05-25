@@ -243,12 +243,12 @@
 
       <!-- footer -->
       <footer class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall">
-        <section class="border-t-[3px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0">
-          <div class="mx-webSmall grid gap-4 md:grid-cols-4 lg:mx-60 lg:grid-cols-4 lg:pt-webMedium">
+        <section class="border-t-[3px] border-b-[2px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0">
+          <div class="mx-webSmall grid place-content-evenly gap-4 text-center md:grid-cols-4 md:text-left lg:pt-webMedium">
             <div>
-              <img class="h-32" src="img/logo.svg" alt="logo" />
+              <img class="mx-auto h-32" src="img/logo.svg" alt="logo" />
             </div>
-            <div>
+            <div class="mx-auto">
               <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
               <p id="bodyBase">
                 ZoneClinic <br />
@@ -259,7 +259,7 @@
                 Email: zoneclinic@gmail.com
               </p>
             </div>
-            <div>
+            <div class="mx-auto">
               <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
               <p id="bodyBase">
                 Mandag: 9-14 <br />
@@ -270,22 +270,26 @@
                 Lør-Søn: Lukket
               </p>
             </div>
-            <div>
+            <div class="mx-auto">
               <p id="bodyMedium" class="lg:pb-2">Følg med</p>
               <div class="flex flex-row gap-2">
-                <a href="https://www.instagram.com/zoneclinic/" target="_blank"> <img src="img/instagram.png" alt="link til instagram" /> </a>
-                <a href="#" target="_blank"> <img src="img/facebook.png" alt="link til facebook" /> </a>
+                <a href="https://www.instagram.com/zoneclinic/" target="_blank">
+                  <img class="h-11 w-11" src="./img/instagram.svg" alt="link til instagram" />
+                </a>
+                <a href="#" target="_blank">
+                  <img class="h-11 w-11" src="./img/facebook.svg" alt="link til facebook" />
+                </a>
               </div>
             </div>
           </div>
         </section>
-        <section class="border-t-[2px] border-olive500 pt-webSmall lg:mx-60 lg:pt-webXsmall">
-          <div class="grid grid-cols-3">
-            <div></div>
+        <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
+          <div class="mx-auto grid grid-cols-3 text-center">
             <div>
               <p id="bodyXsmall">CVR: ?</p>
             </div>
-            <div id="bodyXsmall">Persondatapolitik | Cookiepolitik</div>
+            <div id="bodyXsmall">Persondatapolitik</div>
+            <div id="bodyXsmall">Cookiepolitik</div>
           </div>
         </section>
       </footer>
