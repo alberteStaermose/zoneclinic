@@ -166,13 +166,7 @@ h3 {
   color: #716b52;
 }
 
-/* underlig firkant */
-#polygon {
-  clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
-}
-
 /* kontaktformular */
-
 #kontaktformular {
   background-image: url("img/palme.svg");
   background-repeat: no-repeat;
@@ -217,4 +211,16 @@ h3 {
   #carrousel_flexbox .card {
     flex: 0 0 auto;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  /* underlig firkant */
+  #polygon {
+    background-color: #fbf7e6;
+    clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+  }
+}
+
+#gulBoks {
+  background-image: url("img/plante1.svg");
 }
