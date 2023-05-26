@@ -15,4 +15,5 @@ const treatmentBox = document.querySelector("#behandlings_boks");
 
 treatmentLink.addEventListener("click", () => {
   treatmentBox.classList.toggle("hidden");
+  treatmentBox.classList.add("fadeIn");
 });
