@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: "scotch-display", sans-serif;
   font-weight: 500;
