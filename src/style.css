@@ -256,7 +256,7 @@ h3 {
 }
 
 #behandlings_boks {
-  animation: fadeIn 1.5s;
+  animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {

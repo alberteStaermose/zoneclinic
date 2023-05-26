@@ -12,53 +12,104 @@
     <title>Zoneterapi</title>
   </head>
   <body class="relative bg-olive100">
-    <header class="relative z-50 hidden md:block">
-      <div id="navigation" class="flex justify-between p-6">
-        <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
-        <nav id="menulinks" class="self-start">
-          <ul class="flex flex-row items-center gap-6">
-            <li class="border-olive900 hover:border-b">
-              <a href="om.html">Om ZoneClinic</a>
-            </li>
-            <div>
-              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
+    <!-- SECTION - Header -->
+    <header class="relative z-50">
+      <!-- Web & tablet navigatin -->
+      <div class="hidden md:block">
+        <div id="navigation" class="flex justify-between p-6">
+          <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
+          <nav id="menulinks" class="self-start">
+            <ul class="flex flex-row items-center gap-6">
+              <li class="border-olive900 hover:border-b">
+                <a href="om.html">Om ZoneClinic</a>
+              </li>
+              <div>
+                <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
 
-              <!-- Hover dropdown menu -->
-              <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+                <!-- Hover dropdown menu -->
+                <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+                </div>
               </div>
+              <li class="border-olive900 hover:border-b">
+                <a href="priser.html">Priser</a>
+              </li>
+              <li class="border-olive900 hover:border-b">
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Burger Menu Start -->
+      <div class="relative flex flex-row justify-between py-mobilSmall px-4 md:hidden">
+        <div class="">
+          <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-20" /></a>
+        </div>
+        <!-- Burger stregerne -->
+        <div>
+          <div id="burger_icon" class="group fixed right-6 top-6 z-50">
+            <div class="container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
-            <li class="border-olive900 hover:border-b">
-              <a href="priser.html">Priser</a>
-            </li>
-            <li class="border-olive900 hover:border-b">
-              <a href="kontakt.html">Kontakt</a>
-            </li>
-            <button id="tertiaryButton" type="button">
-              <a href="#0">Book Nu</a>
-            </button>
-          </ul>
-        </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Burger nagivationens links -->
+      <div id="burger_links" class="absolute hidden">
+        <div class="fixed right-0 top-0 z-30 flex h-[100vh] w-3/5 flex-row items-center justify-center bg-olive200 text-center">
+          <div>
+            <!-- Den "normale" menu -->
+            <ul id="menulinks">
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="index.html">Forside</a>
+              </li>
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="om.html">Om ZoneClinic</a>
+              </li>
+              <li id="behandling_link" class="peer mb-6 border-olive900 active:scale-110">
+                <a href="#0">Behandlinger &#8964;</a>
+              </li>
+              <li class="mb-6">
+                <!-- Click dropdown menu -->
+                <div id="behandlings_boks" class="flex hidden flex-col border-b-2 border-t-2 border-olive300">
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="kombi.html">Kombi Behandling</a>
+                </div>
+              </li>
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="priser.html">Priser</a>
+              </li>
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="absolute top-0 z-0">
-      <!-- Lille Hero sektion -->
+      <!-- SECTION - Lille Hero sektion -->
       <section id="lille_hero_section" class="relative">
         <img class="h-96 object-cover" src="./img/lille_hero_overlay.webp" alt="Hero image of a pair of feet" />
 
-        <div class="text-white absolute top-28 flex w-full flex-col items-center text-center">
+        <div class="text-white lg:top-26 absolute top-36 flex w-full flex-col items-center text-center">
           <h1>Zoneterapi</h1>
           <p id="bodyBase">Læs mere om hvad behandlingen indebærer og få svar på dine spørgsmål</p>
-          <button id="tertiaryButton" class="mt-webSmall">Book tid</button>
+          <a id="tertiaryButton" class="mt-webSmall" type="button" href="#0">Book tid</a>
         </div>
       </section>
 
-      <!-- indhld på side-->
-      <!--  -->
-      <!--  -->
       <!-- section 1 - Sektion hvor man kan læse om behandlingen -->
       <section class="mt-mobilLarge md:mt-tabletLarge lg:mx-webXlarge lg:mt-webLarge">
         <h2 class="mb-mobilMedium px-mobilSmall md:px-tabletXlarge lg:mb-webSmall lg:px-0">Læs om behandlingen her</h2>
@@ -82,8 +133,7 @@
           </div>
         </article>
       </section>
-      <!--  -->
-      <!--  -->
+
       <!-- section 2 - Hvad er zoneterapi - gul boks -->
       <section class="relative mt-mobilLarge grid bg-yellow300 md:mt-tabletLarge md:grid-cols-2 lg:mt-webXlarge lg:grid-cols-3 xl:bg-olive100">
         <div id="polygon" class="md:col-span-1 md:mx-0 lg:col-span-2">
@@ -266,6 +316,6 @@
       </footer>
     </main>
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./burgerMenu.js"></script>
   </body>
 </html>

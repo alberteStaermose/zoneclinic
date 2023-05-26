@@ -12,35 +12,90 @@
     <title>ZoneClinic</title>
   </head>
   <body class="relative bg-olive100">
-    <header class="relative z-50 hidden md:block">
-      <div id="navigation" class="flex justify-between p-6">
-        <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
-        <nav id="menulinks" class="self-start">
-          <ul class="flex flex-row items-center gap-6">
-            <li class="border-olive900 hover:border-b">
-              <a href="om.html">Om ZoneClinic</a>
-            </li>
-            <div>
-              <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
+    <!-- SECTION - Header -->
+    <header class="relative z-50">
+      <!-- Web & tablet navigatin -->
+      <div class="hidden md:block">
+        <div id="navigation" class="flex justify-between p-6">
+          <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
+          <nav id="menulinks" class="self-start">
+            <ul class="flex flex-row items-center gap-6">
+              <li class="border-olive900 hover:border-b">
+                <a href="om.html">Om ZoneClinic</a>
+              </li>
+              <div>
+                <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
 
-              <!-- Hover dropdown menu -->
-              <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
-                <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+                <!-- Hover dropdown menu -->
+                <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
+                </div>
               </div>
-            </div>
-            <li class="border-olive900 hover:border-b">
-              <a href="priser.html">Priser</a>
-            </li>
-            <li class="border-olive900 hover:border-b">
-              <a href="kontakt.html">Kontakt</a>
-            </li>
+              <li class="border-olive900 hover:border-b">
+                <a href="priser.html">Priser</a>
+              </li>
+              <li class="border-olive900 hover:border-b">
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-            <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
-          </ul>
-        </nav>
+      <!-- Burger Menu Start -->
+      <div class="relative flex flex-row justify-between py-mobilSmall px-4 md:hidden">
+        <div class="">
+          <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-20" /></a>
+        </div>
+        <!-- Burger stregerne -->
+        <div>
+          <div id="burger_icon" class="group fixed right-6 top-6 z-50">
+            <div class="container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Burger nagivationens links -->
+      <div id="burger_links" class="absolute hidden">
+        <div class="fixed right-0 top-0 z-30 flex h-[100vh] w-3/5 flex-row items-center justify-center bg-olive200 text-center">
+          <div>
+            <!-- Den "normale" menu -->
+            <ul id="menulinks">
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="index.html">Forside</a>
+              </li>
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="om.html">Om ZoneClinic</a>
+              </li>
+              <li id="behandling_link" class="peer mb-6 border-olive900 active:scale-110">
+                <a href="#0">Behandlinger &#8964;</a>
+              </li>
+              <li class="mb-6">
+                <!-- Click dropdown menu -->
+                <div id="behandlings_boks" class="flex hidden flex-col border-b-2 border-t-2 border-olive300">
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="kombi.html">Kombi Behandling</a>
+                </div>
+              </li>
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="priser.html">Priser</a>
+              </li>
+              <li class="mb-6 border-olive900 active:scale-110">
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="absolute top-0 z-0">
@@ -49,7 +104,7 @@
         <div class="hidden lg:block">
           <img class="h-full object-cover" src="./img/hero_img.webp" alt="Hero image of a pair of feet" />
         </div>
-        <div class="px-mobilSmall pt-mobilXlarge text-center lg:mt-webLarge lg:ml-10 lg:mr-20 lg:text-left">
+        <div class="px-mobilSmall pb-10 pt-36 text-center lg:mt-webLarge lg:ml-10 lg:mr-20 lg:text-left">
           <h1 class="mb-mobilMedium text-black200 lg:mb-webSmall">Velkommen til ZoneClinic</h1>
           <p id="bodyBase" class="mx-auto mb-mobilMedium text-black400 lg:mb-webSmall">Velkommen til min klinik i Birkerød. Som professionel behandler tilbyder jeg skræddersyede behandlinger, der er nøje tilpasset dine individuelle behov.</p>
           <a id="primaryButton" class="mb-mobilLarge" type="button" href="#0">Book tid</a>
@@ -108,14 +163,96 @@
         </article>
       </section>
 
-      <!-- sektion med testimonials -->
-      <section class="px-mobilSmall pt-mobilXlarge md:px-tabletXlarge md:pt-tabletXlarge lg:px-webXlarge lg:pt-webXlarge">
-        <h2 class="mb-mobilMedium lg:mb-webSmall">Hvad siger andre</h2>
-        <h3 class="mb-mobilSmall lg:mb-webSmall">Læs her hvad andre fortæller om deres oplevelse med ZoneClinic</h3>
-        <div class="bg-yellow300">
-          <h3>Her skal der være testimonials</h3>
+      <!-- SECTION - testimonials -->
+      <section class="mx-mobilSmall my-mobilLarge md:mx-tabletXlarge md:my-tabletLarge lg:mx-webXlarge lg:my-webLarge">
+        <h2 class="mb-mobilXsmall">Hvad siger andre</h2>
+        <h3 class="mb-mobilLarge">Læs her hvad andre fortæller om deres oplevelse med ZoneClinic</h3>
+
+        <!-- Testimonial carrousel -->
+        <div id="carrousel_section" class="relative mb-mobilMedium p-0">
+          <div id="container" class="relative m-auto max-w-[320px] lg:max-w-[730px]">
+            <!-- Scroll left button -->
+            <button id="scroll_left" class="slider_btn pointer absolute top-0 bottom-0 left-[-8px] mt-auto mb-auto flex h-10 w-10 justify-center rounded-full bg-olive200/80 hover:bg-olive300/80 focus:ring focus:ring-olive500/80">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 w-2.5 text-black500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  fill="currentColor"
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Carrousel elements starts here -->
+            <div id="carrousel_flexbox" class="flex w-full flex-nowrap justify-start overflow-hidden overflow-x-scroll lg:overflow-hidden">
+              <!-- Testimonial 1 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Gitte</p>
+                <p id="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Marlene</p>
+                <p id="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Sofie</p>
+                <p id="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Gitte</p>
+                <p id="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Marlene</p>
+                <p id="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
+              </div>
+
+              <!-- Testimonial 6 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Sofie</p>
+                <p id="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
+              </div>
+
+              <!-- Testimonial 7 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Gitte</p>
+                <p id="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
+              </div>
+
+              <!-- Testimonial 8 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Marlene</p>
+                <p id="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
+              </div>
+
+              <!-- Testimonial 9 -->
+              <div class="card">
+                <p id="bodyMedium" class="pb-mobilXsmall">Sofie</p>
+                <p id="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
+              </div>
+            </div>
+
+            <!-- Scroll right button -->
+            <button id="scroll_right" class="slider_btn pointer absolute top-0 bottom-0 right-[-22px] mt-auto mb-auto flex h-10 w-10 justify-center rounded-full bg-olive200/80 hover:bg-olive300/80 focus:ring focus:ring-olive500/80">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10 w-2.5 text-black500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  fill="currentColor"
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <a id="primaryButton" type="button" href="#0">Book tid</a>
+
+        <div class="flex flex-col items-center justify-center">
+          <a id="primaryButton" type="button" href="#0">Book tid</a>
+        </div>
       </section>
 
       <!-- Kontaktformular -->
@@ -212,5 +349,6 @@
     </main>
 
     <script type="module" src="./carrousel.js"></script>
+    <script type="module" src="./burgerMenu.js"></script>
   </body>
 </html>
