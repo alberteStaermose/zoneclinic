@@ -89,7 +89,7 @@
       <!--  -->
       <!-- section 1 - Sektion hvor man kan læse om behandlingen -->
       <section
-        class="mt-mobilLarge md:mt-tabletLarge lg:mx-webXlarge lg:pt-webLarge"
+        class="mt-mobilLarge md:mt-tabletLarge lg:mx-webXlarge lg:mt-webLarge"
       >
         <h2
           class="mb-mobilMedium px-mobilSmall md:px-tabletXlarge lg:mb-webSmall lg:px-0"
@@ -112,7 +112,7 @@
                 class="py-mobilLarge px-mobilSmall md:px-tabletXlarge lg:my-webSmall lg:rounded lg:py-mobilXsmall lg:px-webSmall"
               >
                 <h3 class="mb-mobilSmall lg:pb-webXsmall">Zoneterapi</h3>
-                <p id="bodyBase" class="mb-mobilMedium">
+                <p id="bodyBase" class="mb-mobilSmall">
                   Når du besøger mig for at modtage zoneterapi, vil du blive
                   tilbudt et fodbad og en indledende samtale om, hvordan jeg kan
                   hjælpe dig bedst muligt. Efterfølgende vil du blive placeret
@@ -131,12 +131,14 @@
       <!--  -->
       <!-- section 2 - Hvad er zoneterapi - gul boks -->
       <section
-        class="bg-yellow300 px-mobilSmall md:grid md:grid-cols-2 md:px-tabletLarge lg:mt-webXlarge lg:grid-cols-3 xl:bg-olive100"
+        class="relative mt-mobilLarge grid bg-yellow300 md:mt-tabletLarge md:grid-cols-2 lg:mt-webXlarge lg:grid-cols-3 xl:bg-olive100"
       >
-        <div id="polygon" class="mx-auto md:col-span-1 md:mx-0 lg:col-span-2">
-          <div class="pt-webSmall pb-webSmall lg:pt-webLarge lg:pb-webLarge">
-            <h2>Læs om zoneterapi her</h2>
-            <h3>Hvad er zoneterapi</h3>
+        <div id="polygon" class="md:col-span-1 md:mx-0 lg:col-span-2">
+          <div
+            class="mb-webLarge mt-mobilXlarge px-mobilSmall md:pl-tabletLarge lg:pl-webXlarge xl:pr-80"
+          >
+            <h2 class="mb-mobilMedium lg:mb-webSmall">Læs om zoneterapi her</h2>
+            <h3 class="mb-mobilSmall lg:pb-webXsmall">Hvad er zoneterapi</h3>
             <hr
               class="h-0.3 mx-0 my-1 mb-5 mt-2 w-40 justify-items-start rounded bg-black500"
             />
@@ -163,24 +165,27 @@
             </p>
           </div>
         </div>
-        <div class="w-40 md:col-span-1 md:w-full">
-          <img src="img/plante1.svg" alt="illustration af plante" />
-        </div>
-      </section>
 
-      <!-- indhld på side - section 3 -->
+        <img
+          class="absolute -bottom-48 right-0 w-64 md:relative md:bottom-0 md:col-span-1 md:w-full"
+          src="img/plante1.svg"
+          alt="illustration af plante"
+        />
+      </section>
+      <!--  -->
+      <!--  -->
+      <!-- section 3 - hvor mange behandlinger -->
       <section
-        class="mx-mobilSmall grid gap-5 md:mx-tabletXlarge md:grid-cols-2 lg:-mx-webXlarge"
+        class="mx-mobilSmall mt-mobilLarge grid gap-5 md:mx-tabletXlarge md:mt-tabletLarge md:grid-cols-2 lg:mx-webXlarge lg:mt-webXlarge"
       >
-        <div>
-          <img
-            class=""
-            src="img/massage_feet_2.png"
-            alt="Billede af føøder som bliver masseret"
-          />
-        </div>
-        <div class="pt-webSmall md:pt-0">
-          <h3>
+        <img
+          class="z-40"
+          src="img/massage_feet_2.png"
+          alt="Billede af føøder som bliver masseret"
+        />
+
+        <div class="">
+          <h3 class="mb-mobilSmall lg:pb-webXsmall">
             Hvor mange behandlinger skal jeg have før jeg kan mærke bedring?
           </h3>
           <hr
@@ -210,10 +215,10 @@
       </section>
       <!-- section 4 - liste med hvad zoneterapi kan hjælpe med -->
       <section
-        class="grid place-content-center px-mobilSmall md:grid-cols-2 md:grid-rows-1 md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge"
+        class="mt-mobilLarge grid place-content-center px-mobilSmall md:mt-tabletLarge md:grid-cols-2 md:grid-rows-1 md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge"
       >
         <img
-          class="pt-webSmall md:col-start-2 md:row-start-1"
+          class="my-auto pt-webSmall md:col-start-2 md:row-start-1"
           src="img/plant2.svg"
           alt="illustration af plante"
         />
@@ -221,7 +226,9 @@
         <div
           class="mx-webSmall pt-webSmall md:col-start-1 md:col-end-2 md:row-start-1 md:pt-0"
         >
-          <h3>Hvad kan zoneterapi hjælpe på</h3>
+          <h3 class="mb-mobilSmall lg:pb-webXsmall">
+            Hvad kan zoneterapi hjælpe på
+          </h3>
           <hr
             class="h-0.3 mx-0 my-1 mb-5 mt-2 w-32 justify-items-start rounded bg-black500"
           />
@@ -249,16 +256,18 @@
       <!--  -->
       <!--  -->
       <!-- section 5 - jeg anbefaler boks -->
-      <section class="">
+      <section
+        class="mt-mobilLarge px-mobilSmall md:mt-tabletLarge md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge"
+      >
         <div
           id="price_box"
-          class="flex place-content-around items-center gap-6 px-mobilSmall md:px-tabletXlarge lg:px-webXlarge"
+          class="flex place-content-around items-center gap-6"
         >
           <div
             class="flex max-w-lg flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40"
           >
             <div class="gap-4 px-webSmall pt-webSmall pb-webSmall">
-              <h2>Jeg Anbefaler</h2>
+              <h2 class="mb-mobilMedium lg:mb-webSmall">Jeg Anbefaler</h2>
               <p id="bodyBase" class="pb-webSmall">
                 Jeg anbefaler at bruge zoneterapi som et supplement til lægelig
                 videnskab, da man aldrig kun må gå til en zoneterapeut uden at
