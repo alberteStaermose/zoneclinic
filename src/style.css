@@ -186,9 +186,10 @@ h3 {
     background-color: theme("colors.yellow500");
     border-radius: 3px;
     padding: 2rem;
-    width: 33vw;
+    width: auto;
     max-width: 330px;
     min-height: 200px;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -197,10 +198,10 @@ h3 {
     justify-content: center;
     margin-left: 15px;
 
-    background-image: url("img/palme.svg");
+    background-image: url("img/palme_gul.svg");
     background-repeat: no-repeat;
-    background-size: 80%;
-    background-position-x: center;
+    background-size: 70%;
+    background-position: center;
   }
 
   .card:last-child {
