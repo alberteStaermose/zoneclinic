@@ -102,7 +102,7 @@
       <section id="lille_hero_section" class="relative">
         <img class="h-96 object-cover" src="./img/lille_hero_overlay.png" alt="Hero image of a pair of feet" />
 
-        <div class="text-white absolute top-28 flex w-full flex-col items-center text-center">
+        <div class="text-white absolute top-36 flex w-full flex-col items-center text-center">
           <h1>Kontakt</h1>
           <p id="bodyBase">Har du spørgsmål så kan du kontakte mig her</p>
           <button id="tertiaryButton" class="mt-webSmall">Book tid</button>
@@ -119,7 +119,7 @@
           </p>
         </div>
 
-        <div class="mx-auto mt-mobilLarge w-3/5 rounded bg-olive200 p-12">
+        <div class="mx-auto mt-mobilLarge w-4/5 rounded bg-olive200 p-12 lg:w-3/5">
           <div class="grid gap-14">
             <form>
               <label class="hidden" for="fname"> Navn*</label>
@@ -151,25 +151,26 @@
       <section class="mx-mobilSmall my-mobilLarge md:mx-tabletXlarge md:my-tabletLarge lg:mx-webXlarge lg:my-webLarge">
         <h2 class="mb-mobilLarge text-center">Information</h2>
 
-        <div id="price_box" class="grid grid-cols-3 place-content-around gap-6">
-          <div class="flex h-[200px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+        <div id="price_box" class="flex flex-col items-center gap-6 md:grid md:grid-cols-3 md:place-content-around">
+          <div class="flex h-[200px] w-[300px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-auto">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/phone_icon.svg" alt="Icon of a pair of feet" />
             <div class="flex flex-row gap-4 pt-webXsmall text-center">
               <p id="bodySmall">
                 +45 50300744 <br />
-                09:00 - 15:00 (Man-Fre)
+                09:00 - 15:00 <br />
+                (Man-Fre)
               </p>
             </div>
           </div>
 
-          <div class="flex h-[200px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[200px] w-[300px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-auto">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/mail_icon.svg" alt="Icon of a pair of feet" />
             <div class="flex flex-row gap-4 pt-webXsmall underline decoration-olive500">
               <a href="mailto:zoneclinic@mail.dk">zoneclinic@mail.dk</a>
             </div>
           </div>
 
-          <div class="flex h-[200px] w-auto flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
+          <div class="flex h-[200px] w-[300px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-auto">
             <img class="h-auto w-[70px] pt-webSmall" src="./img/location_icon.svg" alt="Icon of a pair of feet" />
             <div class="flex flex-row gap-4 pt-webXsmall text-center">
               <p id="bodySmall">
@@ -182,7 +183,7 @@
       </section>
 
       <!-- SECTION - maps og quote -->
-      <section>
+      <section class="my-mobilLarge md:my-tabletLarge lg:my-webLarge">
         <div class="md:grid md:grid-cols-3">
           <iframe
             class="w-full md:col-span-2"
