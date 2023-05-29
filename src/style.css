@@ -175,19 +175,20 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 1.125rem;
-  border: 2px solid #716b52;
-  color: #716b52;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border: 1.5px solid #3f4a3f;
+  color: #3f4a3f;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 27px;
+  padding-right: 27px;
   border-radius: 3px;
   letter-spacing: 0.03rem;
 }
 
 .tertiaryButton:hover {
-  border: 2px solid #374037;
-  color: #242a24;
+  border: 1.5px solid #716b52;
+  color: #716b52;
+  transform: scale(0.97);
 }
 
 input::placeholder,
