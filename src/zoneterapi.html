@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,63 +17,39 @@
       <!-- Web & tablet navigatin -->
       <div class="hidden md:block">
         <div id="navigation" class="flex justify-between p-6">
-          <a href="index.html">
-            <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24"
-          /></a>
-          <nav id="menulinks" class="self-start">
-            <ul class="flex flex-row items-center gap-6">
-              <li class="border-olive900 hover:border-b">
+          <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
+          <nav class="menulinks self-start">
+            <div class="flex flex-row items-center gap-6">
+              <div class="border-olive900 hover:border-b">
                 <a href="om.html">Om ZoneClinic</a>
-              </li>
+              </div>
               <div>
-                <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
-
+                <div class="peer"><a href="#0">Behandlinger &#8964;</a></div>
                 <!-- Hover dropdown menu -->
-                <div
-                  class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex"
-                >
-                  <a
-                    class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
-                    href="zoneterapi.html"
-                    >Zoneterapi</a
-                  >
-                  <a
-                    class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
-                    href="japansklifting.html"
-                    >Japansk Lifting</a
-                  >
-                  <a
-                    class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
-                    href="fysiurgiskmassage.html"
-                    >Fysiurgisk Massage</a
-                  >
-                  <a
-                    class="px-5 py-3 hover:bg-olive200 hover:text-olive900"
-                    href="kombi.html"
-                    >Kombi Behandling</a
-                  >
+                <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
                 </div>
               </div>
-              <li class="border-olive900 hover:border-b">
+
+              <div class="border-olive900 hover:border-b">
                 <a href="priser.html">Priser</a>
-              </li>
-              <li class="border-olive900 hover:border-b">
+              </div>
+              <div class="border-olive900 hover:border-b">
                 <a href="kontakt.html">Kontakt</a>
-              </li>
-              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
-            </ul>
+              </div>
+              <a class="tertiaryButton" type="button" href="#0">Book Nu</a>
+            </div>
           </nav>
         </div>
       </div>
 
       <!-- Burger Menu Start -->
-      <div
-        class="relative flex flex-row justify-between py-mobilSmall px-4 md:hidden"
-      >
+      <div class="relative flex flex-row justify-between py-mobilSmall px-4 md:hidden">
         <div class="">
-          <a href="index.html">
-            <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-20"
-          /></a>
+          <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-20" /></a>
         </div>
         <!-- Burger stregerne -->
         <div>
@@ -88,54 +64,25 @@
       </div>
       <!-- Burger nagivationens links -->
       <div id="burger_links" class="absolute hidden">
-        <div
-          class="fixed right-0 top-0 z-30 flex h-[100vh] w-3/5 flex-row items-center justify-center bg-olive200 text-center"
-        >
+        <div class="fixed right-0 top-0 z-30 flex h-[100vh] w-3/5 flex-row items-center justify-center bg-olive200 text-center">
           <div>
-            <!-- Den "normale" menu -->
-            <ul id="menulinks">
+            <ul class="menulinks">
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="index.html">Forside</a>
               </li>
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="om.html">Om ZoneClinic</a>
               </li>
-              <li
-                id="behandling_link"
-                class="peer mb-6 border-olive900 active:scale-110"
-              >
+              <li id="behandling_link" class="peer mb-6 border-olive900 active:scale-110">
                 <a href="#0">Behandlinger &#8964;</a>
               </li>
               <li class="mb-6">
                 <!-- Click dropdown menu -->
-                <div
-                  id="behandlings_boks"
-                  class="flex hidden flex-col border-b-2 border-t-2 border-olive300"
-                >
-                  <a
-                    class="px-5 py-3 active:scale-110"
-                    class="boks_links"
-                    href="zoneterapi.html"
-                    >Zoneterapi</a
-                  >
-                  <a
-                    class="px-5 py-3 active:scale-110"
-                    class="boks_links"
-                    href="japansklifting.html"
-                    >Japansk Lifting</a
-                  >
-                  <a
-                    class="px-5 py-3 active:scale-110"
-                    class="boks_links"
-                    href="fysiurgiskmassage.html"
-                    >Fysiurgisk Massage</a
-                  >
-                  <a
-                    class="px-5 py-3 active:scale-110"
-                    class="boks_links"
-                    href="kombi.html"
-                    >Kombi Behandling</a
-                  >
+                <div id="behandlings_boks" class="flex hidden flex-col border-b-2 border-t-2 border-olive300">
+                  <a class="px-5 py-3 active:scale-110" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 active:scale-110" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 active:scale-110" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 active:scale-110" href="kombi.html">Kombi Behandling</a>
                 </div>
               </li>
               <li class="mb-6 border-olive900 active:scale-110">
@@ -144,7 +91,9 @@
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="kontakt.html">Kontakt</a>
               </li>
-              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+              <li>
+                <a class="tertiaryButton" type="button" href="#0">Book Nu</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -153,60 +102,32 @@
     <main class="absolute top-0 z-0">
       <!-- SECTION - Lille Hero sektion -->
       <section id="lille_hero_section" class="relative">
-        <img
-          class="h-96 object-cover"
-          src="./img/lille_hero_overlay.webp"
-          alt="Hero image of a pair of feet"
-        />
+        <img class="h-96 object-cover" src="./img/lille_hero_overlay.webp" alt="Hero image of a pair of feet" />
 
-        <div
-          class="text-white lg:top-26 absolute top-36 flex w-full flex-col items-center text-center"
-        >
+        <div class="text-white lg:top-26 absolute top-36 flex w-full flex-col items-center text-center">
           <h1>Zoneterapi</h1>
-          <p id="bodyBase">
-            Læs mere om hvad behandlingen indebærer og få svar på dine spørgsmål
-          </p>
-          <a id="tertiaryButton" class="mt-webSmall" type="button" href="#0"
-            >Book tid</a
-          >
+          <p class="bodyBase pt-6">Læs mere om hvad behandlingen indebærer og få svar på dine spørgsmål</p>
+          <a class="tertiaryButton mt-webSmall" type="button" href="#0">Book tid</a>
         </div>
       </section>
 
       <!-- section 1 - Sektion hvor man kan læse om behandlingen -->
-      <section
-        class="mt-mobilLarge md:mt-tabletLarge lg:mx-webXlarge lg:mt-webLarge"
-      >
-        <h2
-          class="mb-mobilMedium px-mobilSmall md:px-tabletXlarge lg:mb-webSmall lg:px-0"
-        >
-          Læs om behandlingen her
-        </h2>
+      <section class="mt-mobilLarge md:mt-tabletLarge lg:mx-webXlarge lg:mt-webLarge">
+        <h2 class="mb-mobilMedium px-mobilSmall md:px-tabletXlarge lg:mb-webSmall lg:px-0">Læs om behandlingen her</h2>
         <article class="">
           <!-- place-items-center lg:relative lg:grid lg:grid-cols-2 -->
           <div class="md:z-0 lg:grid lg:grid-cols-6 lg:grid-rows-1">
             <!-- w-full px-mobilSmall md:px-tabletXlarge lg:px-0 -->
-            <img
-              class="px-mobilSmall md:px-tabletXlarge lg:col-start-1 lg:col-end-5 lg:row-start-1 lg:row-end-2 lg:my-auto lg:mx-0 lg:px-0"
-              src="img/massage_feet.webp"
-              alt="billede af massage på fødder"
-            />
-            <div
-              class="bg-olive400 md:z-50 md:my-auto lg:col-start-4 lg:col-end-7 lg:row-start-1 lg:row-end-2"
-            >
-              <div
-                class="py-mobilLarge px-mobilSmall md:px-tabletXlarge lg:my-webSmall lg:rounded lg:py-mobilXsmall lg:px-webSmall"
-              >
+            <img class="px-mobilSmall md:px-tabletXlarge lg:col-start-1 lg:col-end-5 lg:row-start-1 lg:row-end-2 lg:my-auto lg:mx-0 lg:px-0" src="img/massage_feet.webp" alt="billede af massage på fødder" />
+            <div class="bg-olive400 md:z-50 md:my-auto lg:col-start-4 lg:col-end-7 lg:row-start-1 lg:row-end-2">
+              <div class="py-mobilLarge px-mobilSmall md:px-tabletXlarge lg:my-webSmall lg:rounded lg:py-mobilXsmall lg:px-webSmall">
                 <h3 class="mb-mobilSmall lg:mb-webXsmall">Zoneterapi</h3>
-                <p id="bodyBase" class="mb-mobilSmall">
-                  Når du besøger mig for at modtage zoneterapi, vil du blive
-                  tilbudt et fodbad og en indledende samtale om, hvordan jeg kan
-                  hjælpe dig bedst muligt. Efterfølgende vil du blive placeret
-                  komfortabelt på min behagelige briks, der er udstyret med en
-                  varmefunktion. Behandlingen varer 50 minutter, og du vil
-                  opleve en behagelig afslapning i løbet af sessionen.
+                <p class="bodyBase mb-mobilSmall">
+                  Når du besøger mig for at modtage zoneterapi, vil du blive tilbudt et fodbad og en indledende samtale om, hvordan jeg kan hjælpe dig bedst muligt. Efterfølgende vil du blive placeret komfortabelt på min behagelige briks, der er
+                  udstyret med en varmefunktion. Behandlingen varer 50 minutter, og du vil opleve en behagelig afslapning i løbet af sessionen.
                 </p>
                 <div class="grid justify-center lg:justify-end">
-                  <button id="primaryButton">Book tid</button>
+                  <button class="primaryButton">Book tid</button>
                 </div>
               </div>
             </div>
@@ -215,118 +136,63 @@
       </section>
 
       <!-- section 2 - Hvad er zoneterapi - gul boks -->
-      <section
-        class="relative mt-mobilLarge grid bg-yellow300 md:mt-tabletLarge md:grid-cols-2 lg:mt-webXlarge lg:grid-cols-3 xl:bg-olive100"
-      >
+      <section class="relative mt-mobilLarge grid bg-yellow300 md:mt-tabletLarge md:grid-cols-2 lg:mt-webXlarge lg:grid-cols-3 xl:bg-olive100">
         <div id="polygon" class="md:col-span-1 md:mx-0 lg:col-span-2">
-          <div
-            class="mb-webLarge mt-mobilXlarge px-mobilSmall md:pl-tabletLarge lg:pl-webXlarge xl:pr-80"
-          >
+          <div class="mb-webLarge mt-mobilXlarge px-mobilSmall md:pl-tabletLarge lg:pl-webXlarge xl:pr-80">
             <h2 class="mb-mobilMedium lg:mb-webSmall">Læs om zoneterapi her</h2>
             <h3 class="mb-mobilSmall lg:pb-webXsmall">Hvad er zoneterapi</h3>
-            <hr
-              class="h-0.3 mx-0 my-1 mb-5 mt-2 w-40 justify-items-start rounded bg-black500"
-            />
-            <p id="bodyBase" class="">
-              Zoneterapi er en alternativ behandlingsmetode, hvor jeg arbejder
-              med at stimulere bestemte områder på fødderne kendt som zoner.
-              Disse zoner har forbindelse til forskellige dele af kroppen,
-              herunder organer, muskler og knogler. <br />
+            <hr class="h-0.3 mx-0 my-1 mb-5 mt-2 w-40 justify-items-start rounded bg-black500" />
+            <p class="bodyBase">
+              Zoneterapi er en alternativ behandlingsmetode, hvor jeg arbejder med at stimulere bestemte områder på fødderne kendt som zoner. Disse zoner har forbindelse til forskellige dele af kroppen, herunder organer, muskler og knogler. <br />
               <br />
-              Gennem massagen af disse zoner arbejder jeg på at frigøre
-              blokeringer og genoprette kroppens naturlige balance. Jeg tror på,
-              at kroppen har en indre intelligens, der kan hjælpe med at
-              helbrede og balancere sig selv, når den får den rette stimulering.
+              Gennem massagen af disse zoner arbejder jeg på at frigøre blokeringer og genoprette kroppens naturlige balance. Jeg tror på, at kroppen har en indre intelligens, der kan hjælpe med at helbrede og balancere sig selv, når den får den
+              rette stimulering.
               <br />
               <br />
-              Zoneterapi er en behandlingsmetode, der kan bruges til at behandle
-              en række forskellige sundhedsmæssige problemer, herunder smerter i
-              ryggen, hovedpine, fordøjelsesproblemer og stress. Nogle klienter
-              bruger også zoneterapi som en form for afslapning og velvære.
+              Zoneterapi er en behandlingsmetode, der kan bruges til at behandle en række forskellige sundhedsmæssige problemer, herunder smerter i ryggen, hovedpine, fordøjelsesproblemer og stress. Nogle klienter bruger også zoneterapi som en form
+              for afslapning og velvære.
               <br />
               <br />
-              Som zoneterapeut skræddersyr jeg behandlingen til dit behov, så
-              jeg kan hjælpe på lige netop dine problemer.
+              Som zoneterapeut skræddersyr jeg behandlingen til dit behov, så jeg kan hjælpe på lige netop dine problemer.
             </p>
           </div>
         </div>
 
-        <img
-          class="absolute -bottom-48 right-0 w-64 md:relative md:bottom-0 md:col-span-1 md:w-full"
-          src="img/plante1.svg"
-          alt="illustration af plante"
-        />
+        <img class="absolute -bottom-48 right-0 w-64 md:relative md:bottom-0 md:col-span-1 md:w-full" src="img/plante1.svg" alt="illustration af plante" />
       </section>
-      <!--  -->
-      <!--  -->
+
       <!-- section 3 - hvor mange behandlinger -->
-      <section
-        class="mx-mobilSmall mt-mobilLarge grid gap-5 md:mx-tabletXlarge md:mt-tabletLarge md:grid-cols-2 lg:mx-webXlarge lg:mt-webXlarge"
-      >
-        <img
-          class="z-40"
-          src="img/massage_feet_2.webp"
-          alt="Billede af føøder som bliver masseret"
-        />
+      <section class="mx-mobilSmall mt-mobilLarge grid gap-5 md:mx-tabletXlarge md:mt-tabletLarge md:grid-cols-2 lg:mx-webXlarge lg:mt-webXlarge">
+        <img class="z-40" src="img/massage_feet_2.webp" alt="Billede af føøder som bliver masseret" />
 
         <div class="">
-          <h3 class="mb-mobilSmall lg:pb-webXsmall">
-            Hvor mange behandlinger skal jeg have før jeg kan mærke bedring?
-          </h3>
-          <hr
-            class="h-0.3 mx-0 my-1 mb-5 mt-2 w-40 justify-items-start rounded bg-black500"
-          />
-          <p id="bodyBase">
-            Det er svært at fastsætte et bestemt antal behandlinger af
-            zoneterapi, som man skal have, før man mærker effekten. Effekten af
-            zoneterapi kan variere fra person til person, og det afhænger også
-            af, hvad der behandles, samt omfanget og alvoren af problemet.
+          <h3 class="mb-mobilSmall lg:pb-webXsmall">Hvor mange behandlinger skal jeg have før jeg kan mærke bedring?</h3>
+          <hr class="h-0.3 mx-0 my-1 mb-5 mt-2 w-40 justify-items-start rounded bg-black500" />
+          <p class="bodyBase">
+            Det er svært at fastsætte et bestemt antal behandlinger af zoneterapi, som man skal have, før man mærker effekten. Effekten af zoneterapi kan variere fra person til person, og det afhænger også af, hvad der behandles, samt omfanget og
+            alvoren af problemet.
             <br />
             <br />
-            Nogle mennesker kan opleve lindring af symptomer efter blot en eller
-            to behandlinger, mens andre kan have brug for flere behandlinger for
-            at opnå de ønskede resultater. Som zoneterapeut tilpasser jeg
-            behandlingen til dig og dine behov, og jeg vil normalt anbefale en
-            serie af behandlinger for at opnå de bedste resultater. <br />
+            Nogle mennesker kan opleve lindring af symptomer efter blot en eller to behandlinger, mens andre kan have brug for flere behandlinger for at opnå de ønskede resultater. Som zoneterapeut tilpasser jeg behandlingen til dig og dine behov, og
+            jeg vil normalt anbefale en serie af behandlinger for at opnå de bedste resultater. <br />
             <br />
-            Det er også vigtigt at bemærke, at zoneterapi kan have en kumulativ
-            effekt, hvilket betyder, at effekten kan opbygge sig over tid,
-            efterhånden som kroppen bliver mere i balance. Derfor kan det være
-            en god idé at prøve zoneterapi i en periode for at evaluere effekten
-            og vurdere, om det er en behandlingsmetode, der kan være til gavn
-            for dig.
+            Det er også vigtigt at bemærke, at zoneterapi kan have en kumulativ effekt, hvilket betyder, at effekten kan opbygge sig over tid, efterhånden som kroppen bliver mere i balance. Derfor kan det være en god idé at prøve zoneterapi i en
+            periode for at evaluere effekten og vurdere, om det er en behandlingsmetode, der kan være til gavn for dig.
           </p>
         </div>
       </section>
       <!-- section 4 - liste med hvad zoneterapi kan hjælpe med -->
-      <section
-        class="mt-mobilLarge grid place-content-center px-mobilSmall md:mt-tabletLarge md:grid-cols-2 md:grid-rows-1 md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge"
-      >
-        <img
-          class="my-auto pt-webSmall md:col-start-2 md:row-start-1"
-          src="img/plant2.svg"
-          alt="illustration af plante"
-        />
+      <section class="mt-mobilLarge grid place-content-center px-mobilSmall md:mt-tabletLarge md:grid-cols-2 md:grid-rows-1 md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge">
+        <img class="my-auto pt-webSmall md:col-start-2 md:row-start-1" src="img/plant2.svg" alt="illustration af plante" />
 
-        <div
-          class="mx-webSmall pt-webSmall md:col-start-1 md:col-end-2 md:row-start-1 md:pt-0"
-        >
-          <h3 class="mb-mobilSmall lg:pb-webXsmall">
-            Hvad kan zoneterapi hjælpe på
-          </h3>
-          <hr
-            class="h-0.3 mx-0 my-1 mb-5 mt-2 w-32 justify-items-start rounded bg-black500"
-          />
-          <ul id="bodyBase" class="list-disc">
+        <div class="mx-webSmall pt-webSmall md:col-start-1 md:col-end-2 md:row-start-1 md:pt-0">
+          <h3 class="mb-mobilSmall lg:pb-webXsmall">Hvad kan zoneterapi hjælpe på</h3>
+          <hr class="h-0.3 mx-0 my-1 mb-5 mt-2 w-32 justify-items-start rounded bg-black500" />
+          <ul class="bodyBase list-disc">
             <li>Smerter i ryggen, nakken og skuldrene</li>
             <li>Hovedpine og migræne</li>
-            <li>
-              Fordøjelsesproblemer, herunder irritabel tyktarm, forstoppelse og
-              diarré
-            </li>
-            <li>
-              Menstruationsproblemer, herunder smerter og uregelmæssigheder
-            </li>
+            <li>Fordøjelsesproblemer, herunder irritabel tyktarm, forstoppelse og diarré</li>
+            <li>Menstruationsproblemer, herunder smerter og uregelmæssigheder</li>
             <li>Søvnproblemer og søvnløshed</li>
             <li>Stress, angst og depression</li>
             <li>Allergier og astma</li>
@@ -338,28 +204,16 @@
           </ul>
         </div>
       </section>
-      <!--  -->
-      <!--  -->
+
       <!-- section 5 - jeg anbefaler boks -->
-      <section
-        class="mt-mobilLarge px-mobilSmall md:mt-tabletLarge md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge"
-      >
-        <div
-          id="price_box"
-          class="flex place-content-around items-center gap-6"
-        >
-          <div
-            class="flex max-w-lg flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40"
-          >
+      <section class="mt-mobilLarge px-mobilSmall md:mt-tabletLarge md:px-tabletXlarge lg:mt-webXlarge lg:px-webXlarge">
+        <div id="price_box" class="flex place-content-around items-center gap-6">
+          <div class="flex max-w-lg flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40">
             <div class="gap-4 px-webSmall pt-webSmall pb-webSmall">
               <h2 class="mb-mobilMedium lg:mb-webSmall">Jeg Anbefaler</h2>
-              <p id="bodyBase" class="pb-webSmall">
-                Jeg anbefaler at bruge zoneterapi som et supplement til lægelig
-                videnskab, da man aldrig kun må gå til en zoneterapeut uden at
-                tale med sin læge om ens symptomer.
-              </p>
+              <p class="bodyBase pb-webSmall">Jeg anbefaler at bruge zoneterapi som et supplement til lægelig videnskab, da man aldrig kun må gå til en zoneterapeut uden at tale med sin læge om ens symptomer.</p>
               <div class="grid justify-center lg:justify-end">
-                <button id="secondaryButton" type="button">
+                <button class="secondaryButton" type="button">
                   <a href="priser.html">Se priser</a>
                 </button>
               </div>
@@ -369,76 +223,34 @@
       </section>
 
       <!-- Kontaktformular -->
-      <section
-        id="kontaktformular"
-        class="mt-mobilXlarge bg-olive200 px-mobilSmall pb-mobilLarge pt-mobilLarge md:mt-tabletXlarge lg:mt-webXlarge"
-      >
-        <article
-          class="grid gap-20 px-mobilSmall md:grid-cols-2 lg:px-webXlarge"
-        >
+      <section id="kontaktformular" class="mt-mobilXlarge bg-olive200 px-mobilSmall pb-mobilLarge pt-mobilLarge md:mt-tabletXlarge lg:mt-webXlarge">
+        <article class="grid gap-20 px-mobilSmall md:grid-cols-2 lg:px-webXlarge">
           <div>
-            <h2 class="mb-mobilMedium text-olive900 lg:mb-webSmall">
-              Kontakt mig
-            </h2>
+            <h2 class="mb-mobilMedium text-olive900 lg:mb-webSmall">Kontakt mig</h2>
             <p id="bodyBaseForms">
-              Du er velkommen til at kontakte mig ved spørgsmål angående mine
-              behandlinger eller hvis du er usikker på, om jeg kan hjælpe på
-              lige netop din problemstilling. Jeg vil besvare din henvendelse
-              hurtigst muligt for at give dig den nødvendige information og
-              afklaring.
+              Du er velkommen til at kontakte mig ved spørgsmål angående mine behandlinger eller hvis du er usikker på, om jeg kan hjælpe på lige netop din problemstilling. Jeg vil besvare din henvendelse hurtigst muligt for at give dig den
+              nødvendige information og afklaring.
             </p>
           </div>
           <div>
             <div class="grid gap-10">
-              <form class="">
+              <form>
                 <label class="hidden" for="fname"> Navn*</label>
-                <input
-                  class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
-                  id="form"
-                  type="text"
-                  placeholder="Navn*"
-                  autocomplete="given-name"
-                  required
-                />
-              </form>
-              <div class="grid gap-10 md:grid-cols-2 md:gap-4">
-                <form class="">
-                  <label class="hidden" for="email"> Email* </label>
-                  <input
-                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
-                    id="form"
-                    type="email"
-                    placeholder="Email*"
-                    autocomplete="email"
-                    required
-                  />
-                </form>
-                <form class="">
-                  <label class="hidden" for="text"> Emne* </label>
-                  <input
-                    class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
-                    id="form"
-                    type="text"
-                    placeholder="Emne*"
-                    autocomplete="text"
-                    required
-                  />
-                </form>
-              </div>
+                <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="fname" type="text" placeholder="Navn*" autocomplete="given-name" required />
 
-              <form class="">
-                <label class="hidden" for="text"> Besked* </label>
-                <textarea
-                  class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0"
-                  id="form"
-                  type="text"
-                  placeholder="Besked*"
-                  autocomplete="text"
-                  required
-                ></textarea>
+                <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+                  <label class="hidden" for="email"> Email* </label>
+                  <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="email" type="email" placeholder="Email*" autocomplete="email" required />
+
+                  <label class="hidden" for="subject"> Emne* </label>
+                  <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="subject" type="text" placeholder="Emne*" autocomplete="text" required />
+                </div>
+
+                <label class="hidden" for="message"> Besked* </label>
+                <textarea class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="message" placeholder="Besked*" autocomplete="text-message" required></textarea>
               </form>
               <div class="text-right">
-                <button id="tertiaryButton">Send</button>
+                <button class="tertiaryButton" type="submit">Send</button>
               </div>
             </div>
           </div>
@@ -446,21 +258,15 @@
       </section>
 
       <!-- footer -->
-      <footer
-        class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall"
-      >
-        <section
-          class="border-t-[3px] border-b-[2px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0"
-        >
-          <div
-            class="mx-webSmall grid place-content-evenly gap-4 text-center md:grid-cols-4 md:text-left lg:pt-webMedium"
-          >
+      <footer class="mt-webMedium bg-olive100 pb-webSmall lg:mt-webLarge lg:pt-webLarge lg:pb-webSmall">
+        <section class="border-t-[3px] border-b-[2px] border-olive500 pb-webMedium pt-webSmall sm:pt-webSmall md:pt-webMedium lg:-mt-webLarge lg:pb-webMedium lg:pt-0">
+          <div class="mx-webSmall grid place-content-evenly gap-4 text-center md:grid-cols-4 md:text-left lg:pt-webMedium">
             <div>
               <img class="mx-auto h-32" src="img/logo.svg" alt="logo" />
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
-              <p id="bodyBase">
+              <h2 class="bodyMedium lg:pb-2">Kontaktinformation</h2>
+              <p class="bodyBase">
                 ZoneClinic <br />
                 Skovvang 25, <br />
                 3460 Birkerød <br />
@@ -470,8 +276,8 @@
               </p>
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
-              <p id="bodyBase">
+              <h3 class="bodyMedium lg:pb-2">Telefontider</h3>
+              <p class="bodyBase">
                 Mandag: 9-14 <br />
                 Tirsdag: 9-14 <br />
                 Onsdag: 9-14 <br />
@@ -481,21 +287,13 @@
               </p>
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+              <h3 class="bodyMedium lg:pb-2">Følg med</h3>
               <div class="flex flex-row gap-2">
                 <a href="https://www.instagram.com/zoneclinic/" target="_blank">
-                  <img
-                    class="h-11 w-11"
-                    src="./img/instagram.svg"
-                    alt="link til instagram"
-                  />
+                  <img class="h-11 w-11" src="./img/instagram.svg" alt="link til instagram" />
                 </a>
                 <a href="#" target="_blank">
-                  <img
-                    class="h-11 w-11"
-                    src="./img/facebook.svg"
-                    alt="link til facebook"
-                  />
+                  <img class="h-11 w-11" src="./img/facebook.svg" alt="link til facebook" />
                 </a>
               </div>
             </div>
@@ -504,10 +302,10 @@
         <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
           <div class="mx-auto grid grid-cols-3 text-center">
             <div>
-              <p id="bodyXsmall">CVR: ?</p>
+              <h2 class="bodyXsmall">CVR: ?</h2>
             </div>
-            <div id="bodyXsmall">Persondatapolitik</div>
-            <div id="bodyXsmall">Cookiepolitik</div>
+            <p class="bodyXsmall">Persondatapolitik</p>
+            <p class="bodyXsmall">Cookiepolitik</p>
           </div>
         </section>
       </footer>

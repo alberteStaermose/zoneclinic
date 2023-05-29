@@ -53,7 +53,7 @@ h3 {
   }
 }
 
-#bodyMedium {
+.bodyMedium {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -64,7 +64,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#bodySmall {
+.bodySmall {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -75,7 +75,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#bodyBase {
+.bodyBase {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -85,6 +85,10 @@ h3 {
   color: #2a312a;
   line-height: 140%;
   letter-spacing: 0.03rem;
+}
+
+#hero_section .bodyBase {
+  max-width: fit-content;
 }
 
 #bodyBaseForms {
@@ -98,7 +102,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#bodyBaseItalic {
+.bodyBaseItalic {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -108,7 +112,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#bodyXsmall {
+.bodyXsmall {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -118,7 +122,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#menulinks {
+.menulinks {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -128,7 +132,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#primaryButton {
+.primaryButton {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -142,12 +146,12 @@ h3 {
   border-radius: 3px;
   letter-spacing: 0.03rem;
 }
-#primaryButton:hover {
+.primaryButton:hover {
   background-color: #ecde99;
   transform: scale(0.97);
 }
 
-#secondaryButton {
+.secondaryButton {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -161,12 +165,12 @@ h3 {
   border-radius: 3px;
   letter-spacing: 0.03rem;
 }
-#secondaryButton:hover {
+.secondaryButton:hover {
   background-color: #3d514a;
   transform: scale(0.97);
 }
 
-#tertiaryButton {
+.tertiaryButton {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -181,12 +185,13 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
-#tertiaryButton:hover {
+.tertiaryButton:hover {
   border: 2px solid #374037;
   color: #242a24;
 }
 
-#form::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 300;
   font-style: normal;

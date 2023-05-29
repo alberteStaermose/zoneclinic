@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -18,14 +18,13 @@
       <div class="hidden md:block">
         <div id="navigation" class="flex justify-between p-6">
           <a href="index.html"> <img src="./img/logo.svg" alt="ZoneClinics logo" class="w-24" /></a>
-          <nav id="menulinks" class="self-start">
-            <ul class="flex flex-row items-center gap-6">
-              <li class="border-olive900 hover:border-b">
+          <nav class="menulinks self-start">
+            <div class="flex flex-row items-center gap-6">
+              <div class="border-olive900 hover:border-b">
                 <a href="om.html">Om ZoneClinic</a>
-              </li>
+              </div>
               <div>
-                <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
-
+                <div class="peer"><a href="#0">Behandlinger &#8964;</a></div>
                 <!-- Hover dropdown menu -->
                 <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
                   <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
@@ -34,14 +33,15 @@
                   <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
                 </div>
               </div>
-              <li class="border-olive900 hover:border-b">
+
+              <div class="border-olive900 hover:border-b">
                 <a href="priser.html">Priser</a>
-              </li>
-              <li class="border-olive900 hover:border-b">
+              </div>
+              <div class="border-olive900 hover:border-b">
                 <a href="kontakt.html">Kontakt</a>
-              </li>
-              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
-            </ul>
+              </div>
+              <a class="tertiaryButton" type="button" href="#0">Book Nu</a>
+            </div>
           </nav>
         </div>
       </div>
@@ -66,8 +66,7 @@
       <div id="burger_links" class="absolute hidden">
         <div class="fixed right-0 top-0 z-30 flex h-[100vh] w-3/5 flex-row items-center justify-center bg-olive200 text-center">
           <div>
-            <!-- Den "normale" menu -->
-            <ul id="menulinks">
+            <ul class="menulinks">
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="index.html">Forside</a>
               </li>
@@ -80,10 +79,10 @@
               <li class="mb-6">
                 <!-- Click dropdown menu -->
                 <div id="behandlings_boks" class="flex hidden flex-col border-b-2 border-t-2 border-olive300">
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="zoneterapi.html">Zoneterapi</a>
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="japansklifting.html">Japansk Lifting</a>
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="kombi.html">Kombi Behandling</a>
+                  <a class="px-5 py-3 active:scale-110" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 active:scale-110" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 active:scale-110" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 active:scale-110" href="kombi.html">Kombi Behandling</a>
                 </div>
               </li>
               <li class="mb-6 border-olive900 active:scale-110">
@@ -92,7 +91,9 @@
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="kontakt.html">Kontakt</a>
               </li>
-              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+              <li>
+                <a class="tertiaryButton" type="button" href="#0">Book Nu</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -105,8 +106,8 @@
 
         <div class="text-white lg:top-26 absolute top-36 flex w-full flex-col items-center text-center">
           <h1>Om ZoneClinic</h1>
-          <p id="bodyBase">Læs mere om hvem jeg er og hvorfor jeg er zoneterapeut</p>
-          <a id="tertiaryButton" class="mt-webSmall" type="button" href="#0">Book tid</a>
+          <p class="bodyBase pt-6">Læs mere om hvem jeg er og hvorfor jeg er zoneterapeut</p>
+          <a class="tertiaryButton mt-webSmall" type="button" href="#0">Book tid</a>
         </div>
       </section>
 
@@ -114,12 +115,12 @@
       <section class="grid bg-olive500 px-mobilSmall py-mobilLarge sm:mx-auto md:px-tabletXlarge md:py-tabletLarge lg:grid-cols-2 lg:grid-rows-1 lg:gap-6 lg:px-webXlarge lg:py-webLarge">
         <div class="sm:mx-auto">
           <h2 class="mb-mobilMedium lg:mb-webSmall">Hvem er jeg</h2>
-          <p id="bodyBase" class="mb-mobilMedium lg:mb-webSmall">
+          <p class="bodyBase mb-mobilMedium lg:mb-webSmall">
             Mit navn er Merete og jeg er 55 år gammel. Jeg er uddannet grafiker og har i mange år været selvstændig. Da jeg altid har interesseret mig for det alternative, valgte jeg også at uddanne mig som zoneterapeut og jeg blev færdig fra Den
             Danske Zoneterapeut skole i Herlev i 2021. Derudover har jeg taget Japansk Lifting og Fysiurgisk Massør uddannelsen.
           </p>
           <h3 class="mb-mobilXsmall lg:mb-webXsmall">Hvorfor er jeg zoneterapeut?</h3>
-          <p id="bodyBase">
+          <p class="bodyBase">
             Som zoneterapeut elsker jeg at hjælpe mennesker med at forbedre deres sundhed og velvære på en naturlig måde. Jeg har valgt at blive uddannet som zoneterapeut, fordi jeg tror på, at kroppen har en naturlig evne til at helbrede sig selv,
             og jeg ønsker at hjælpe mine klienter med at opnå denne balance. Jeg nyder at praktisere zoneterapi, fordi det giver mig mulighed for at arbejde tæt sammen med mine klienter og lytte til deres individuelle behov og bekymringer. Jeg kan
             tilpasse min behandling til at imødekomme klientens specifikke symptomer og behov, og jeg ser ofte hurtige og positive resultater fra mine behandlinger. Jeg nyder at holde mig opdateret og lære mere for at kunne hjælpe mine klienter bedst
@@ -146,27 +147,23 @@
           </div>
           <div>
             <div class="grid gap-10">
-              <form class="">
+              <form>
                 <label class="hidden" for="fname"> Navn*</label>
-                <input class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="form" type="text" placeholder="Navn*" autocomplete="given-name" required />
-              </form>
-              <div class="grid gap-10 md:grid-cols-2 md:gap-4">
-                <form class="">
-                  <label class="hidden" for="email"> Email* </label>
-                  <input class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="form" type="email" placeholder="Email*" autocomplete="email" required />
-                </form>
-                <form class="">
-                  <label class="hidden" for="text"> Emne* </label>
-                  <input class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="form" type="text" placeholder="Emne*" autocomplete="text" required />
-                </form>
-              </div>
+                <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="fname" type="text" placeholder="Navn*" autocomplete="given-name" required />
 
-              <form class="">
-                <label class="hidden" for="text"> Besked* </label>
-                <textarea class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="form" type="text" placeholder="Besked*" autocomplete="text" required></textarea>
+                <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+                  <label class="hidden" for="email"> Email* </label>
+                  <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="email" type="email" placeholder="Email*" autocomplete="email" required />
+
+                  <label class="hidden" for="subject"> Emne* </label>
+                  <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="subject" type="text" placeholder="Emne*" autocomplete="text" required />
+                </div>
+
+                <label class="hidden" for="message"> Besked* </label>
+                <textarea class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="message" placeholder="Besked*" autocomplete="text-message" required></textarea>
               </form>
               <div class="text-right">
-                <button id="tertiaryButton">Send</button>
+                <button class="tertiaryButton" type="submit">Send</button>
               </div>
             </div>
           </div>
@@ -181,8 +178,8 @@
               <img class="mx-auto h-32" src="img/logo.svg" alt="logo" />
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
-              <p id="bodyBase">
+              <h2 class="bodyMedium lg:pb-2">Kontaktinformation</h2>
+              <p class="bodyBase">
                 ZoneClinic <br />
                 Skovvang 25, <br />
                 3460 Birkerød <br />
@@ -192,8 +189,8 @@
               </p>
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
-              <p id="bodyBase">
+              <h3 class="bodyMedium lg:pb-2">Telefontider</h3>
+              <p class="bodyBase">
                 Mandag: 9-14 <br />
                 Tirsdag: 9-14 <br />
                 Onsdag: 9-14 <br />
@@ -203,7 +200,7 @@
               </p>
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+              <h3 class="bodyMedium lg:pb-2">Følg med</h3>
               <div class="flex flex-row gap-2">
                 <a href="https://www.instagram.com/zoneclinic/" target="_blank">
                   <img class="h-11 w-11" src="./img/instagram.svg" alt="link til instagram" />
@@ -218,10 +215,10 @@
         <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
           <div class="mx-auto grid grid-cols-3 text-center">
             <div>
-              <p id="bodyXsmall">CVR: ?</p>
+              <h2 class="bodyXsmall">CVR: ?</h2>
             </div>
-            <div id="bodyXsmall">Persondatapolitik</div>
-            <div id="bodyXsmall">Cookiepolitik</div>
+            <p class="bodyXsmall">Persondatapolitik</p>
+            <p class="bodyXsmall">Cookiepolitik</p>
           </div>
         </section>
       </footer>
