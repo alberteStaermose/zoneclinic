@@ -2,14 +2,6 @@ import "./style.css";
 
 let isAnimating = false;
 
-window.addEventListener("DOMContentLoaded", init);
-
-function init() {
-  scrollLeftAnimate();
-  initDealCarrousel();
-  updateUpaCarrouselInfo();
-}
-
 function scrollLeftAnimate(elem, unit) {
   if (!elem || isAnimating) {
     //if element not found / if animating, do not execute slide
@@ -42,14 +34,14 @@ function initDealCarrousel(dealCarrouselID) {
     maxCarrouselScroll = document.querySelectorAll("#" + dealCarrouselID + " .card").length * cardOutterWidth - document.querySelector("#" + dealCarrouselID + " #carrousel_flexbox").clientWidth;
   }
 
-  document.querySelector("#" + dealCarrouselID + " #scroll_left").addEventListener("click", function () {
+  document.querySelector("#" + dealCarrouselID + " #scroll_left").addEventListener("click", () => {
     updateUpaCarrouselInfo(); //in case window resized, will get new info
     if (target.scrollLeft > 0) {
       scrollLeftAnimate(target, -cardOutterWidth * 2);
     }
   });
 
-  document.querySelector("#" + dealCarrouselID + " #scroll_right").addEventListener("click", function () {
+  document.querySelector("#" + dealCarrouselID + " #scroll_right").addEventListener("click", () => {
     updateUpaCarrouselInfo(); //in case window resized, will get new info
     if (target.scrollLeft < maxCarrouselScroll) {
       scrollLeftAnimate(target, cardOutterWidth * 2);
