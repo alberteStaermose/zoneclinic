@@ -217,7 +217,7 @@ textarea::placeholder {
     border-radius: 3px;
     padding: 2rem;
     width: auto;
-    max-width: 330px;
+    max-width: 300px;
     min-height: 200px;
     overflow: hidden;
 
