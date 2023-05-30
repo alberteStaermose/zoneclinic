@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  */
+/*  */
+/*  */
+/* Typografi */
 * {
   box-sizing: border-box;
 }
@@ -132,6 +136,10 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
+/*  */
+/*  */
+/*  */
+/* Knapper */
 .primaryButton {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
@@ -147,7 +155,7 @@ h3 {
   letter-spacing: 0.03rem;
 }
 .primaryButton:hover {
-  background-color: #ecde99;
+  background-color: #e4d06d;
   transform: scale(0.97);
 }
 
@@ -156,27 +164,8 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 1.125rem;
-  background-color: #496259;
-  color: #f1e6b2;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 3px;
-  letter-spacing: 0.03rem;
-}
-.secondaryButton:hover {
-  background-color: #3d514a;
-  transform: scale(0.97);
-}
-
-.tertiaryButton {
-  font-family: "tablet-gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.125rem;
-  border: 1.5px solid #3f4a3f;
-  color: #3f4a3f;
+  border: 1.5px solid #33433d;
+  color: #33433d;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 27px;
@@ -184,12 +173,16 @@ h3 {
   border-radius: 3px;
   letter-spacing: 0.03rem;
 }
-
-.tertiaryButton:hover {
-  border: 1.5px solid #716b52;
-  color: #716b52;
+.secondaryButton:hover {
+  border: 2px solid #232e2a;
+  color: #232e2a;
   transform: scale(0.97);
 }
+
+/*  */
+/*  */
+/*  */
+/* Styling i kontaktformular - font*/
 
 input::placeholder,
 textarea::placeholder {
@@ -199,7 +192,9 @@ textarea::placeholder {
   font-size: 1rem;
   color: #716b52;
 }
-
+/*  */
+/*  */
+/*  */
 /* kontaktformular */
 #kontaktformular {
   background-image: url("img/palme.svg");
@@ -209,6 +204,9 @@ textarea::placeholder {
   background-position-x: left;
 }
 
+/*  */
+/*  */
+/*  */
 /* Testimonials card components styling */
 
 @layer components {
@@ -247,7 +245,9 @@ textarea::placeholder {
     flex: 0 0 auto;
   }
 }
-
+/*  */
+/*  */
+/*  */
 /* Burger Menu streger */
 .container {
   display: inline-block;
