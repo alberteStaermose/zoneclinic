@@ -42,7 +42,22 @@ h3 {
   line-height: 120%;
   letter-spacing: 0.03rem;
 }
+/* Tablet */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.583rem;
+  }
 
+  h2 {
+    font-size: 2.488rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+}
+
+/* Web */
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 4.3rem;
