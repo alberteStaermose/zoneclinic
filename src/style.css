@@ -156,6 +156,7 @@ h3 {
 }
 .primaryButton:hover {
   background-color: #e4d06d;
+  color: #33433d;
   transform: scale(0.97);
 }
 
