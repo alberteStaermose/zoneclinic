@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-d30a6557.png" />
     <!-- Link til Adobe fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/cxy2cwv.css" />
     <!-- Link til vores style sheet -->
     
 
-    <title>Kontakt</title>
-    <script type="module" crossorigin src="./assets/burgerMenu-6398dca8.js"></script>
-    <script type="module" crossorigin src="./assets/carrousel-bab89f5c.js"></script>
-    <link rel="stylesheet" href="./assets/burgerMenu-bf0301aa.css">
+    <!-- Meta Titel -->
+    <title>Spørgsmål? Angående Zoneterapi Så Kontakt Mig Her - ZoneClinic</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Har du spørgsmål angående Zoneterapi, Japansk Lifting, Fysiurgisk Massage eller Alternativ behandling? Så kan du altid skrive til mig her" />
+    <script type="module" crossorigin src="./assets/burgerMenu-3af84029.js"></script>
+    <script type="module" crossorigin src="./assets/carrousel-3931dd7c.js"></script>
+    <link rel="stylesheet" href="./assets/burgerMenu-be127255.css">
   </head>
   <body class="relative bg-olive100">
     <!-- SECTION - Header -->
     <header class="relative z-50">
       <!-- Web & tablet navigatin -->
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <div id="navigation" class="flex justify-between p-6">
           <a href="index.html"> <img src="./assets/logo-1c6f8cb3.svg" alt="ZoneClinics logo" class="w-24" /></a>
-          <nav id="menulinks" class="self-start">
-            <ul class="flex flex-row items-center gap-6">
-              <li class="border-olive900 hover:border-b">
+          <nav class="menulinks self-start">
+            <div class="flex flex-row items-center gap-6">
+              <div class="border-olive900 hover:border-b">
                 <a href="om.html">Om ZoneClinic</a>
-              </li>
+              </div>
               <div>
-                <li class="peer"><a href="#0">Behandlinger &#8964;</a></li>
-
+                <div class="peer"><a href="#0">Behandlinger &#8964;</a></div>
                 <!-- Hover dropdown menu -->
                 <div class="absolute hidden w-[200px] flex-col rounded bg-olive500 hover:flex peer-hover:flex">
                   <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="zoneterapi.html">Zoneterapi</a>
@@ -37,20 +41,21 @@
                   <a class="px-5 py-3 hover:bg-olive200 hover:text-olive900" href="kombi.html">Kombi Behandling</a>
                 </div>
               </div>
-              <li class="border-olive900 hover:border-b">
+
+              <div class="border-olive900 hover:border-b">
                 <a href="priser.html">Priser</a>
-              </li>
-              <li class="border-olive900 hover:border-b">
+              </div>
+              <div class="border-olive900 hover:border-b">
                 <a href="kontakt.html">Kontakt</a>
-              </li>
-              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
-            </ul>
+              </div>
+              <a class="secondaryButton" type="button" href="#0">Book Nu</a>
+            </div>
           </nav>
         </div>
       </div>
 
       <!-- Burger Menu Start -->
-      <div class="relative flex flex-row justify-between py-mobilSmall px-4 md:hidden">
+      <div class="relative flex flex-row justify-between py-mobilSmall px-4 lg:hidden">
         <div class="">
           <a href="index.html"> <img src="./assets/logo-1c6f8cb3.svg" alt="ZoneClinics logo" class="w-20" /></a>
         </div>
@@ -69,8 +74,7 @@
       <div id="burger_links" class="absolute hidden">
         <div class="fixed right-0 top-0 z-30 flex h-[100vh] w-3/5 flex-row items-center justify-center bg-olive200 text-center">
           <div>
-            <!-- Den "normale" menu -->
-            <ul id="menulinks">
+            <ul class="menulinks">
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="index.html">Forside</a>
               </li>
@@ -83,10 +87,10 @@
               <li class="mb-6">
                 <!-- Click dropdown menu -->
                 <div id="behandlings_boks" class="flex hidden flex-col border-b-2 border-t-2 border-olive300">
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="zoneterapi.html">Zoneterapi</a>
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="japansklifting.html">Japansk Lifting</a>
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
-                  <a class="px-5 py-3 active:scale-110" class="boks_links" href="kombi.html">Kombi Behandling</a>
+                  <a class="px-5 py-3 active:scale-110" href="zoneterapi.html">Zoneterapi</a>
+                  <a class="px-5 py-3 active:scale-110" href="japansklifting.html">Japansk Lifting</a>
+                  <a class="px-5 py-3 active:scale-110" href="fysiurgiskmassage.html">Fysiurgisk Massage</a>
+                  <a class="px-5 py-3 active:scale-110" href="kombi.html">Kombi Behandling</a>
                 </div>
               </li>
               <li class="mb-6 border-olive900 active:scale-110">
@@ -95,7 +99,9 @@
               <li class="mb-6 border-olive900 active:scale-110">
                 <a href="kontakt.html">Kontakt</a>
               </li>
-              <a id="tertiaryButton" type="button" href="#0">Book Nu</a>
+              <li>
+                <a class="secondaryButton" type="button" href="#0">Book Nu</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -107,10 +113,10 @@
       <section id="lille_hero_section" class="relative">
         <img class="h-96 object-cover" src="./assets/lille_hero_overlay-3ef9df06.webp" alt="Hero image of a pair of feet" />
 
-        <div class="text-white lg:top-26 absolute top-36 flex w-full flex-col items-center text-center">
+        <div class="text-white lg:top-26 absolute top-36 flex w-full flex-col items-center px-mobilSmall text-center md:px-tabletXlarge lg:px-webXlarge">
           <h1>Kontakt</h1>
-          <p id="bodyBase">Har du spørgsmål så kan du kontakte mig her</p>
-          <a id="tertiaryButton" class="mt-webSmall" type="button" href="#0">Book tid</a>
+          <p class="bodyBase pt-6">Har du spørgsmål så kan du kontakte mig her</p>
+          <a class="primaryButton mt-webSmall" type="button" href="#0">Book tid</a>
         </div>
       </section>
 
@@ -118,185 +124,136 @@
       <section class="bg-olive500 px-mobilSmall py-mobilLarge md:px-tabletXlarge md:py-tabletLarge lg:px-webXlarge lg:py-webLarge">
         <div class="">
           <h2>Kom i kontakt med mig</h2>
-          <p id="bodyBase">
+          <p class="bodyBase pt-mobilXsmall">
             Jeg vil gerne høre fra dig! Har du spørgsmål, kommentarer eller ønsker du at booke en aftale, er du velkommen til at kontakte mig via nedenstående kontaktinformation. Jeg står klar til at hjælpe dig og besvare dine henvendelser så hurtigt
             som muligt. Du kan kontakte mig enten via telefon, e-mail eller ved at udfylde kontaktformularen nedenfor.
           </p>
         </div>
 
         <div class="mx-auto mt-mobilLarge w-4/5 rounded bg-olive200 p-12 lg:w-3/5">
-          <div class="grid gap-14">
+          <div class="grid gap-10">
             <form>
               <label class="hidden" for="fname"> Navn*</label>
-              <input class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0" id="form" type="text" placeholder="Navn*" autocomplete="given-name" required />
-            </form>
-            <div class="grid gap-10 md:grid-cols-2 md:gap-4">
-              <form>
-                <label class="hidden" for="email"> Email* </label>
-                <input class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0" id="form" type="email" placeholder="Email*" autocomplete="email" required />
-              </form>
-              <form>
-                <label class="hidden" for="text"> Emne* </label>
-                <input class="border-b-1 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0" id="form" type="text" placeholder="Emne*" autocomplete="text" required />
-              </form>
-            </div>
+              <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="fname" type="text" placeholder="Navn*" autocomplete="given-name" required />
 
-            <form>
-              <label class="hidden" for="text"> Besked* </label>
-              <textarea class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200 p-0" id="form" type="text" placeholder="Besked*" autocomplete="text" required></textarea>
+              <div class="grid gap-10 md:grid-cols-2 md:gap-4">
+                <label class="hidden" for="email"> Email* </label>
+                <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="email" type="email" placeholder="Email*" autocomplete="email" required />
+
+                <label class="hidden" for="subject"> Emne* </label>
+                <input class="border-b-1 mb-6 w-full border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="subject" type="text" placeholder="Emne*" autocomplete="text" required />
+              </div>
+
+              <label class="hidden" for="message"> Besked* </label>
+              <textarea class="border-b-1 grid w-full grid-rows-6 border-l-0 border-r-0 border-t-0 border-solid border-olive900 bg-olive200/0 p-0" id="message" placeholder="Besked*" autocomplete="text-message" required></textarea>
             </form>
             <div class="text-right">
-              <button id="tertiaryButton">Send</button>
+              <button class="secondaryButton" type="submit">Send</button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION - Kontakt informationer -->
-      <section class="mx-mobilSmall my-mobilLarge md:mx-tabletXlarge md:my-tabletLarge lg:mx-webXlarge lg:my-webLarge">
-        <h2 class="mb-mobilLarge text-center">Information</h2>
-
-        <div id="price_box" class="flex flex-col items-center gap-6 md:grid md:grid-cols-3 md:place-content-around">
-          <div class="flex h-[200px] w-[300px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-auto">
-            <img class="h-auto w-[70px] pt-webSmall" src="./assets/phone_icon-de043dad.svg" alt="Icon of a pair of feet" />
-            <div class="flex flex-row gap-4 pt-webXsmall text-center">
-              <p id="bodySmall">
-                +45 50300744 <br />
-                09:00 - 15:00 <br />
-                (Man-Fre)
-              </p>
-            </div>
-          </div>
-
-          <div class="flex h-[200px] w-[300px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-auto">
-            <img class="h-auto w-[70px] pt-webSmall" src="./assets/mail_icon-906b26ac.svg" alt="Icon of a pair of feet" />
-            <div class="flex flex-row gap-4 pt-webXsmall underline decoration-olive500">
-              <a href="mailto:zoneclinic@mail.dk">zoneclinic@mail.dk</a>
-            </div>
-          </div>
-
-          <div class="flex h-[200px] w-[300px] flex-col items-center justify-start rounded bg-olive100 shadow shadow-olive600/40 md:w-auto">
-            <img class="h-auto w-[70px] pt-webSmall" src="./assets/location_icon-2bc679ba.svg" alt="Icon of a pair of feet" />
-            <div class="flex flex-row gap-4 pt-webXsmall text-center">
-              <p id="bodySmall">
-                Skovvang 25, <br />
-                Birkerød 3460
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION - maps og quote -->
-      <section class="my-mobilLarge md:my-tabletLarge lg:my-webLarge">
-        <div class="md:grid md:grid-cols-3">
-          <iframe
-            class="w-full md:col-span-2"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1296.2641148980756!2d12.440920636455775!3d55.856419361666184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465248a6f17581df%3A0x4db801683b158793!2sSkovvang%2025%2C%203460%20Birker%C3%B8d!5e0!3m2!1sda!2sdk!4v1684914807510!5m2!1sda!2sdk"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-
-          <div class="flex h-[450px] w-auto flex-col justify-center bg-olive400 p-6 text-center md:col-span-1">
-            <h2>❞</h2>
-            <h3>Det, der er dine rødder, kan ses på dine fødder</h3>
           </div>
         </div>
       </section>
 
       <!-- SECTION - testimonials -->
-      <section class="mx-mobilSmall my-mobilLarge md:mx-tabletXlarge md:my-tabletLarge lg:mx-webXlarge lg:my-webLarge">
-        <h2 class="mb-mobilXsmall">Hvad siger andre</h2>
-        <h3 class="mb-mobilLarge">Læs her hvad andre fortæller om deres oplevelse med ZoneClinic</h3>
+      <section class="mt-mobilLarge md:mt-tabletLarge lg:mt-webLarge">
+        <h2 class="mx-mobilSmall mb-mobilXsmall md:mx-tabletXlarge lg:mx-webXlarge">Hvad siger andre</h2>
+        <h3 class="mx-mobilSmall mb-mobilXsmall md:mx-tabletXlarge lg:mx-webXlarge">Læs her hvad andre fortæller om deres oplevelse med ZoneClinic</h3>
 
-        <!-- Testimonial carrousel -->
-        <div id="carrousel_section" class="relative mb-mobilMedium p-0">
-          <div id="container" class="relative m-auto max-w-[320px] lg:max-w-[730px]">
+        <div id="carrousel_section" class="mx-mobilSmall mt-mobilMedium mb-mobilMedium p-0 md:mx-tabletXlarge lg:mx-webMedium">
+          <div id="container" class="relative mx-auto max-w-[320px] lg:max-w-[630px]">
             <!-- Scroll left button -->
-            <button id="scroll_left" class="slider_btn pointer absolute top-0 bottom-0 left-[-8px] mt-auto mb-auto flex h-10 w-10 justify-center rounded-full bg-olive200/80 hover:bg-olive300/80 focus:ring focus:ring-olive500/80">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 w-2.5 text-black500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                <path
-                  fill="currentColor"
-                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
-                ></path>
-              </svg>
+            <button class="cursor-auto text-black200/0">
+              <div id="scroll_left" class="slider_btn absolute top-0 bottom-0 left-[-8px] mt-auto mb-auto flex h-10 w-10 cursor-pointer justify-center rounded-full bg-olive200/80 hover:bg-olive300/80 focus:ring focus:ring-olive500/80">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="chevron-left"
+                  class="svg-inline--fa fa-chevron-left fa-w-10 flex w-2.5 justify-center self-center text-black500"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                  ></path>
+                </svg>
+              </div>
+              Previous
             </button>
 
             <!-- Carrousel elements starts here -->
             <div id="carrousel_flexbox" class="flex w-full flex-nowrap justify-start overflow-hidden overflow-x-scroll lg:overflow-hidden">
               <!-- Testimonial 1 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Gitte</p>
-                <p id="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
+                <p class="bodyMedium pb-mobilXsmall">Gitte</p>
+                <p class="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
               </div>
 
               <!-- Testimonial 2 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Marlene</p>
-                <p id="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
+                <p class="bodyMedium pb-mobilXsmall">Marlene</p>
+                <p class="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
               </div>
 
               <!-- Testimonial 3 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Sofie</p>
-                <p id="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
+                <p class="bodyMedium pb-mobilXsmall">Sofie</p>
+                <p class="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
               </div>
 
               <!-- Testimonial 4 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Gitte</p>
-                <p id="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
+                <p class="bodyMedium pb-mobilXsmall">Gitte</p>
+                <p class="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
               </div>
 
               <!-- Testimonial 5 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Marlene</p>
-                <p id="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
+                <p class="bodyMedium pb-mobilXsmall">Marlene</p>
+                <p class="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
               </div>
 
               <!-- Testimonial 6 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Sofie</p>
-                <p id="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
+                <p class="bodyMedium pb-mobilXsmall">Sofie</p>
+                <p class="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
               </div>
 
               <!-- Testimonial 7 -->
               <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Gitte</p>
-                <p id="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
-              </div>
-
-              <!-- Testimonial 8 -->
-              <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Marlene</p>
-                <p id="bodyBaseItalic">“Merete er en behagelig behandler, og man føler sig i tygge hænder når man kommer og får sin behandling”</p>
-              </div>
-
-              <!-- Testimonial 9 -->
-              <div class="card">
-                <p id="bodyMedium" class="pb-mobilXsmall">Sofie</p>
-                <p id="bodyBaseItalic">“Merete har hjulpet mig rigtigt meget, meg har førhen haft søvnproblemer og menstruationssmerter, men dette er helt væk nu”</p>
+                <p class="bodyMedium pb-mobilXsmall">Gitte</p>
+                <p class="bodyBaseItalic">“At komme hos Merete, er at få et pusterum i hverdagen, hvor jeg kan slappe af og slippe for stress og jag”</p>
               </div>
             </div>
 
             <!-- Scroll right button -->
-            <button id="scroll_right" class="slider_btn pointer absolute top-0 bottom-0 right-[-22px] mt-auto mb-auto flex h-10 w-10 justify-center rounded-full bg-olive200/80 hover:bg-olive300/80 focus:ring focus:ring-olive500/80">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10 w-2.5 text-black500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                <path
-                  fill="currentColor"
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                ></path>
-              </svg>
+            <button class="cursor-auto text-black200/0">
+              <div id="scroll_right" class="slider_btn pointer absolute top-0 bottom-0 right-[-22px] mt-auto mb-auto flex h-10 w-10 cursor-pointer justify-center rounded-full bg-olive200/80 hover:bg-olive300/80 focus:ring focus:ring-olive500/80">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="chevron-right"
+                  class="svg-inline--fa fa-chevron-right fa-w-10 flex w-2.5 justify-center self-center text-black500"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                  ></path>
+                </svg>
+              </div>
+              Next
             </button>
           </div>
         </div>
 
         <div class="flex flex-col items-center justify-center">
-          <a id="primaryButton" type="button" href="#0">Book tid</a>
+          <a class="primaryButton" type="button" href="#0">Book tid</a>
         </div>
       </section>
 
@@ -308,8 +265,8 @@
               <img class="mx-auto h-32" src="./assets/logo-1c6f8cb3.svg" alt="logo" />
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Kontaktinformation</p>
-              <p id="bodyBase">
+              <h2 class="bodyMedium lg:pb-2">Kontaktinformation</h2>
+              <p class="bodyBase">
                 ZoneClinic <br />
                 Skovvang 25, <br />
                 3460 Birkerød <br />
@@ -319,8 +276,8 @@
               </p>
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Telefontider</p>
-              <p id="bodyBase">
+              <h3 class="bodyMedium lg:pb-2">Telefontider</h3>
+              <p class="bodyBase">
                 Mandag: 9-14 <br />
                 Tirsdag: 9-14 <br />
                 Onsdag: 9-14 <br />
@@ -330,7 +287,7 @@
               </p>
             </div>
             <div class="mx-auto">
-              <p id="bodyMedium" class="lg:pb-2">Følg med</p>
+              <h3 class="bodyMedium lg:pb-2">Følg med</h3>
               <div class="flex flex-row gap-2">
                 <a href="https://www.instagram.com/zoneclinic/" target="_blank">
                   <img class="h-11 w-11" src="./assets/instagram-13012ed9.svg" alt="link til instagram" />
@@ -345,10 +302,10 @@
         <section class="pt-webSmall lg:mx-60 lg:pt-webXsmall">
           <div class="mx-auto grid grid-cols-3 text-center">
             <div>
-              <p id="bodyXsmall">CVR: ?</p>
+              <h2 class="bodyXsmall">CVR: ?</h2>
             </div>
-            <div id="bodyXsmall">Persondatapolitik</div>
-            <div id="bodyXsmall">Cookiepolitik</div>
+            <p class="bodyXsmall">Persondatapolitik</p>
+            <p class="bodyXsmall">Cookiepolitik</p>
           </div>
         </section>
       </footer>
