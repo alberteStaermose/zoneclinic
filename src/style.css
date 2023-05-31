@@ -244,8 +244,8 @@ textarea::placeholder {
 
     background-image: url("img/palme_gul.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center;
+    background-size: 90%;
+    background-position: right;
   }
 
   .card:last-child {
