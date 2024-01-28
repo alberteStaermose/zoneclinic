@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     /* ALLE FARVER */
+    
     colors: {
       /* OLIVE */
       olive100: "#FEFEFD",
